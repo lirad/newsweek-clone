@@ -57,10 +57,10 @@
             <i class="fa fa-user fa-2x d-md-none  d-sm-block"></i>
           </button>
 
-          <button class="login-button d-none d-sm-inline">
+          <button class="login-button d-none d-md-inline">
             <a href="#" class="text-white">LOGIN</a>
           </button>
-          <button class="subscribe-button p-1 d-flex align-item-center">
+          <button class="subscribe-button d-flex align-item-center">
             <a href="#" class="text-dark">SUBSCRIBE > </a>
           </button>
           <button>
@@ -73,7 +73,7 @@
     <div class="flex-row d-none d-lg-block">
       <div class="col-10">
       <nav class="d-flex justify-content-start nav-top pt-2">
-        <ul class="list-unstyled d-flex justify-space-evenly align-item-center">
+        <ul class="list-unstyled d-flex justify-space-evenly align-items-center">
           <li><a href="#">U.S</a></li>
           <li><a href="#">World</a></li>
           <li><a href="#">Business</a></li>
@@ -85,7 +85,12 @@
           <li><a href="#">The Debate</a></li>
           <li><a href="#">Vantage</a></li>
           <li><a href="#">Weather</a></li>
-          <li><a href="#">Search</a></li>
+          <li>
+            <div class="d-flex align-items-center">
+              <input type="text" placeholder="Search">
+              <i class="fa fa-search fa-lg ml-2 text-dark font-weight-light"></i>
+            </div>
+          </li>
         </ul>
       </div>
       <div class="col-2">
@@ -93,15 +98,17 @@
       </div>
 
       </nav>
-      <nav class="d-flex justify-content-start nav-bottom">
-        <ul>
-          <li><a href="#">Item</a></li>
-          <li><a href="#">Item</a></li>
-          <li><a href="#">Item</a></li>
-          <li><a href="#">Item</a></li>
-          <li><a href="#">Item</a></li>
-          <li><a href="#">Item</a></li>
-        </ul>
+
+
+      <nav class="nav-bottom">
+          <ul class="d-flex justify-content-start list-unstyled px-4">
+            <li class="px-3"><a href="#">TRENDING</a></li>
+            <li class="px-3"><a href="#">DONALD TRUMP</a></li>
+            <li class="px-3"><a href="#">JOE BIDEN</a></li>
+            <li class="px-3"><a href="#">CHINA</a></li>
+            <li class="px-3"><a href="#">CORONA VIRUS</a></li>
+            <li class="px-3"><a href="#">2020 ELECTION</a></li>
+          </ul>
       </nav>
     </div>
   </header>

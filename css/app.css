@@ -1,5 +1,5 @@
-html {
-  font-family: 'Roboto Condensed', sans-serif;
+body {
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 button {
@@ -40,7 +40,7 @@ button {
 }
 
 .subscribe-button a {
-  padding: 15px;
+  padding: 4px 8px;
   font-weight: 800;
 }
 
@@ -53,7 +53,7 @@ header i {
   color: #fb9b93;
 }
 
-header ul li:not(:nth-of-type(1)){
+header ul li:not(:nth-of-type(1)) {
   border-left: 1px solid #ccc;
 }
 
@@ -62,20 +62,43 @@ header ul li:first-of-type {
 }
 
 header ul li {
-  padding: 0 4px;
+  padding: 0 7px;
 }
 
 header ul li a {
   text-decoration: none;
   color: #333;
-  font-size: 17px;
+  font-size: 19px;
   font-weight: bold;
   white-space: nowrap;
-
 }
 
+header ul li input {
+  border: none;
+  background-color: transparent;
+  width: 50px;
+  z-index: 1;
+}
 
-@media (max-width: 768px){
+header ul li input:focus {
+  width: 100%;
+  border: 1px solid black;
+}
+
+.fa-search {
+  font-weight: 100;
+  z-index: 2;
+}
+
+.nav-bottom ul li a {
+  font-size: 16px;
+}
+
+.nav-bottom ul li:nth-child(n + 2) a {
+  color: #807f84;
+}
+
+@media (max-width: 768px) {
   .subscribe-button {
     margin-left: 0;
     margin-right: 0;
