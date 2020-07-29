@@ -1,3 +1,31 @@
-body {
-  background-color: blue;
+.bg-red {
+  background-color: #f72210;
+}
+
+.main-logo img {
+  filter: invert(1);
+}
+
+.login-button {
+  background-color: transparent;
+  border: none;
+}
+
+.login-button span {
+  font-size: 20px;
+  font-weight: 600;
+  color: #100f04;
+}
+
+.subscribe-button {
+  background-color: #ffe500;
+  color: #100f04;
+  border: none;
+  border-radius: 15px;
+  margin-left: 5px;
+}
+
+.subscribe-button span {
+  padding: 15px;
+  font-weight: 800;
 }
