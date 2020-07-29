@@ -1,3 +1,16 @@
+html {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.justify-space-evenly {
+  justify-content: space-evenly;
+}
+
 .bg-red {
   background-color: #f72210;
 }
@@ -23,6 +36,7 @@
   border: none;
   border-radius: 15px;
   margin-left: 5px;
+  margin-right: 15px;
 }
 
 .subscribe-button a {
@@ -34,7 +48,48 @@ header a:hover {
   text-decoration: none;
 }
 
-#menu-btn {
+header i {
   /* display: none; */
   color: #fb9b93;
+}
+
+header ul li:not(:nth-of-type(1)){
+  border-left: 1px solid #ccc;
+}
+
+header ul li:first-of-type {
+  padding-left: 0;
+}
+
+header ul li {
+  padding: 0 4px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 17px;
+  font-weight: bold;
+  white-space: nowrap;
+
+}
+
+
+@media (max-width: 768px){
+  .subscribe-button {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .subscribe-button a {
+    font-size: 10px;
+    padding: 0;
+    white-space: nowrap;
+  }
+  .responsive-header button i {
+    font-size: 1rem;
+  }
+
+  .container-fluid {
+    padding-left: 0;
+  }
 }
