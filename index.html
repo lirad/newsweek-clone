@@ -1,23 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <!-- Custom Stylesheet -->
-    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/app.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Hello, world!</title>
   </head>
-  <body class="container-fluid">
-    <header ">
-        <div class="row bg-red header-top text-white">
+  <body class="container-fluid px-md-0">
+    <header>
+      <div class="bg-red header-top text-white">
+        <div class="row d-sm-none d-md-none d-lg-flex">
           <div class="col-4 p-3">
             <div class="row ml-3">
-             <img src="/images/weather-icon.png" width="20" height="20" alt="weather icon"/>  
-             <span><b> 24°Rio de Janeiro, BR </b></span>
+              <img
+                src="/images/weather-icon.png"
+                width="20"
+                height="20"
+                alt="weather icon"
+              />
+              <a href="#" class="text-white"><b> 24°Rio de Janeiro, BR </b></a>
             </div>
             <div class="row ml-3 mt-2">
               <span>Wed, Jul 29, 2020</span>
@@ -28,50 +47,81 @@
               <img src="images/logo.svg" / >
             </a>
           </div>
-          <div class="col-4 d-flex align-items-end justify-content-end mb-3">
-            <button class="login-button text-white">
-              <span>LOGIN</span>
+          <div
+            class="col-4 d-flex align-items-end justify-content-end mb-3 pr-5"
+          >
+            <button class="login-button">
+              <a href="#" class="text-white">LOGIN</a>
             </button>
             <button class="subscribe-button p-1">
-              <span>SUBSCRIBE > </span>
+              <a href="#" class="text-dark">SUBSCRIBE > </a>
             </button>
+            <i id="menu-btn" class="fa fa-bars d-lg-none d-xl-none"></i>
           </div>
         </div>
-        
-        <div class="flex-row">
-          <nav class="d-flex justify-content-start nav-top">
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-          </nav>
-          <nav class="d-flex justify-content-start nav-bottom">
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-          </nav>
+
+        <div class="row d-lg-none d-md-flex py-2 px-3">
+          <div class="col-sm-4">
+            <a href="#" class="main-logo fill-white">
+              <img width="150" src="images/logo.svg" / >
+            </a>
+          </div>
+          <div class="col-sm-8 d-flex justify-content-end align-items-center">
+            <i class="fa fa-user fa-2x d-none d-sm-inline"></i>
+            <button class="login-button">
+              <a href="#" class="text-white">LOGIN</a>
+            </button>
+            <button class="subscribe-button p-1">
+              <a href="#" class="text-dark">SUBSCRIBE > </a>
+            </button>
+            <i id="menu-btn" class="fa fa-bars fa-2x ml-3"></i>
+          </div>
         </div>
-      
+      </div>
+
+      <div class="flex-row d-none d-lg-block">
+        <nav class="d-flex justify-content-start nav-top">
+          <li><a href="#">Item</a></li>
+          <li><a href="#">Item</a></li>
+          <li><a href="#">Item</a></li>
+          <li><a href="#">Item</a></li>
+          <li><a href="#">Item</a></li>
+          <li><a href="#">Item</a></li>
+          <li><a href="#">Item</a></li>
+          <li><a href="#">Item</a></li>
+          <li><a href="#">Item</a></li>
+          <li><a href="#">Item</a></li>
+          <li><a href="#">Item</a></li>
+        </nav>
+        <nav class="d-flex justify-content-start nav-bottom">
+          <li><a href="#">Item</a></li>
+          <li><a href="#">Item</a></li>
+          <li><a href="#">Item</a></li>
+          <li><a href="#">Item</a></li>
+          <li><a href="#">Item</a></li>
+          <li><a href="#">Item</a></li>
+        </nav>
+      </div>
     </header>
 
-    <main>
-
-    </main>
+    <main></main>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
