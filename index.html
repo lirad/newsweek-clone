@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="./css/app.css" />
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <title>Hello, world!</title>
+  <title>Newsweek Clone</title>
 </head>
 
 <body class="container-fluid px-md-0">
@@ -37,30 +37,30 @@
           </a>
         </div>
         <div class="col-4 d-flex align-items-end justify-content-end mb-3 px-5 ">
-          <button class="login-button">
+          <button class="btn btn-link login-button pt-2 mr-1">
             <a href="#" class="text-white">LOGIN</a>
           </button>
-          <button class="subscribe-button p-1">
+          <button class="btn subscribe-button p-1">
             <a href="#" class="text-dark">SUBSCRIBE > </a>
           </button>
         </div>
       </div>
 
-      <div class="row d-lg-none d-md-flex py-2 px-3 responsive-header">
+      <div class="row d-lg-none d-md-flex py-2 px-3 responsive-header bg-red">
         <div class="col-6 col-md-7">
           <a href="#" class="main-logo fill-white">
             <img width="132" src="images/logo.svg" />
           </a>
         </div>
-        <div class="col-6 col-md-5 d-flex justify-space-evenly align-items-center">
-          <button>
+        <div class="col-6 col-md-5 d-flex justify-content-end align-items-center">
+          <button class="mr-1">
             <i class="fa fa-user fa-2x d-md-none  d-sm-block"></i>
           </button>
 
-          <button class="login-button d-none d-md-inline">
+          <button class="login-button d-none d-md-inline mx-1">
             <a href="#" class="text-white">LOGIN</a>
           </button>
-          <button class="subscribe-button d-flex align-item-center">
+          <button class="subscribe-button d-flex align-item-center ml-1">
             <a href="#" class="text-dark">SUBSCRIBE > </a>
           </button>
           <button>
@@ -72,26 +72,26 @@
 
     <div class="flex-row d-none d-lg-block">
       <div class="col-10">
-      <nav class="d-flex justify-content-start nav-top pt-2">
-        <ul class="list-unstyled d-flex justify-space-evenly align-items-center">
-          <li><a href="#">U.S</a></li>
-          <li><a href="#">World</a></li>
-          <li><a href="#">Business</a></li>
-          <li><a href="#">Tech & Science</a></li>
-          <li><a href="#">Culture</a></li>
-          <li><a href="#">Newsgeek</a></li>
-          <li><a href="#">Sports</a></li>
-          <li><a href="#">Health</a></li>
-          <li><a href="#">The Debate</a></li>
-          <li><a href="#">Vantage</a></li>
-          <li><a href="#">Weather</a></li>
-          <li>
-            <div class="d-flex align-items-center">
-              <input type="text" placeholder="Search">
-              <i class="fa fa-search fa-lg ml-2 text-dark font-weight-light"></i>
-            </div>
-          </li>
-        </ul>
+        <nav class="d-flex justify-content-start nav-top pt-2">
+          <ul class="list-unstyled d-flex justify-space-evenly align-items-center">
+            <li><a href="#">U.S</a></li>
+            <li><a href="#">World</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Tech & Science</a></li>
+            <li><a href="#">Culture</a></li>
+            <li><a href="#">Newsgeek</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Health</a></li>
+            <li><a href="#">The Debate</a></li>
+            <li><a href="#">Vantage</a></li>
+            <li><a href="#">Weather</a></li>
+            <li>
+              <div class="d-flex align-items-center">
+                <input type="text" placeholder="Search">
+                <i class="fa fa-search fa-lg ml-2 text-dark font-weight-light"></i>
+              </div>
+            </li>
+          </ul>
       </div>
       <div class="col-2">
 
@@ -101,19 +101,51 @@
 
 
       <nav class="nav-bottom">
-          <ul class="d-flex justify-content-start list-unstyled px-4">
-            <li class="px-3"><a href="#">TRENDING</a></li>
-            <li class="px-3"><a href="#">DONALD TRUMP</a></li>
-            <li class="px-3"><a href="#">JOE BIDEN</a></li>
-            <li class="px-3"><a href="#">CHINA</a></li>
-            <li class="px-3"><a href="#">CORONA VIRUS</a></li>
-            <li class="px-3"><a href="#">2020 ELECTION</a></li>
-          </ul>
+        <ul class="d-flex justify-content-start list-unstyled px-4 py-3 border-top border-bottom">
+          <li class="px-3"><a href="#">TRENDING</a></li>
+          <li class="px-3"><a href="#">DONALD TRUMP</a></li>
+          <li class="px-3"><a href="#">JOE BIDEN</a></li>
+          <li class="px-3"><a href="#">CHINA</a></li>
+          <li class="px-3"><a href="#">CORONA VIRUS</a></li>
+          <li class="px-3"><a href="#">2020 ELECTION</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
-  <main></main>
+  <main class="container-fluid">
+    <div class="row">
+      <div class="col-3 p2">
+        <h6 class="text-secondary font-weight-bold">FEATURED STORIES</h6>
+        <article class="card mb-3 border-0">        
+          <figure class="mb-1 position-relative">
+            <img src="/images/image1.jpg" class="card-img-top" alt="..." />
+            <figcaption class="position-absolute article-tag">
+              WORLD
+            </figcaption>
+          </figure>
+          <div class="card-body pt-1 pl-0">
+            <h4 class="card-title font-weight-bold">
+              U.S. Extends Lebanon 'National Emergency' Amid Crises, Israeli Attacks
+            </h4>
+            <p class="card-text font-weight-light">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, sint repellendus, quam rerum saepe
+              voluptas
+              iure architecto deleniti at debitis natus et eius ab fugiat consectetur incidunt unde id? Fugiat?
+            </p>
+          </div>
+        </article>
+
+      </div>
+      <div class="col-6 bg-primary" style="height: 150px;">
+
+      </div>
+      <div class="col-3 bg-red" style="height: 150px">
+
+      </div>
+    </div>
+
+  </main>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
