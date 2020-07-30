@@ -18,8 +18,8 @@
   <title>Newsweek Clone</title>
 </head>
 
-<body class="container-fluid px-md-0">
-  <header>
+<body class="container-fluid ">
+  <header clas="bg-red">
     <div class="bg-red header-top text-white">
       <div class="row d-none  d-lg-flex">
         <div class="col-4 p-3">
@@ -36,11 +36,11 @@
             <img src="images/logo.svg" />
           </a>
         </div>
-        <div class="col-4 d-flex align-items-end justify-content-end mb-3 px-5 ">
-          <button class="btn btn-link login-button pt-2 mr-1">
+        <div class="col-4 d-flex align-items-end justify-content-end mb-3 pl-5 ">
+          <button type="button" class="btn btn-link login-button pt-2 mr-1">
             <a href="#" class="text-white">LOGIN</a>
           </button>
-          <button class="btn subscribe-button p-1">
+          <button type="button" class="btn subscribe-button p-1">
             <a href="#" class="text-dark">SUBSCRIBE > </a>
           </button>
         </div>
@@ -53,17 +53,17 @@
           </a>
         </div>
         <div class="col-6 col-md-5 d-flex justify-content-end align-items-center">
-          <button class="mr-1">
+          <button type="button" class="mr-1">
             <i class="fa fa-user fa-2x d-md-none  d-sm-block"></i>
           </button>
 
-          <button class="login-button d-none d-md-inline mx-1">
+          <button type="button" class="login-button d-none d-md-inline mx-1">
             <a href="#" class="text-white">LOGIN</a>
           </button>
-          <button class="subscribe-button d-flex align-item-center ml-1">
+          <button type="button" class="subscribe-button d-flex align-item-center ml-1">
             <a href="#" class="text-dark">SUBSCRIBE > </a>
           </button>
-          <button>
+          <button type="button">
             <i id="menu-btn" class="fa fa-bars fa-2x"></i>
           </button>
         </div>
@@ -117,7 +117,7 @@
     <div class="row">
       <div class="col-3 p2">
         <h6 class="text-secondary font-weight-bold">FEATURED STORIES</h6>
-        <article class="card mb-3 border-0">        
+        <article class="card mb-3 border-0">
           <figure class="mb-1 position-relative">
             <img src="/images/image1.jpg" class="card-img-top" alt="..." />
             <figcaption class="position-absolute article-tag">
@@ -137,9 +137,11 @@
         </article>
 
       </div>
+
+
       <div class="col-6">
         <h6 class="text-secondary font-weight-bold">FEATURED STORIES</h6>
-        <article class="card mb-3 border-0">        
+        <article class="card mb-3 border-0">
           <figure class="mb-1 position-relative">
             <img src="/images/image2.jpg" class="card-img-top" alt="..." />
             <figcaption class="position-absolute article-tag">
@@ -158,24 +160,135 @@
           </div>
         </article>
       </div>
+
+      <!-- start 3rd column -->
       <div class="col-3">
         <h6 class="text-secondary font-weight-bold">THE DEBATE</h6>
-        <article class="row border-top-3 py-2 ">
+        <article class="row border-top-3 pt-3">
           <div class="col-md-3">
-            <img src="images/image3.jpg" height="63" width="63" class="rounded-circle">
+            <img src="images/profile.png" height="63" width="63" class="rounded-circle">
           </div>
           <div class="col-md-9">
             <div class="card-block">
-              <h4 class="card-title font-17 font-weight-bold">Lorem ipsum dolor sit amet</h4>
+              <h4 class="card-title font-17 font-weight-bold">Lorem ipsum dolor sit amet est solor</h4>
               <p class="card-text font-14">By <span class="font-weight-bold">DONALD TRUMP</span></p>
             </div>
           </div>
         </article>
-        <div id="vs" class="position-relative border-top border-bottom">
-          <span class="position-absolute"><p id="test">VS</p></span>
+        <div id="vs" class=" ">
+          <span class="">VS</span>
         </div>
+
+        <article class="row border-bottom-3 pb-3 ">
+          <div class="col-md-9">
+            <div class="card-block">
+              <h4 class="card-title font-17 font-weight-bold">Lorem ipsum dolor sit amet est solor</h4>
+              <p class="card-text font-14">By <span class="font-weight-bold">DONALD TRUMP</span></p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <img src="images/profile.png" height="63" width="63" class="rounded-circle">
+          </div>
+        </article>
+
+        <h6 class="text-secondary font-weight-bold mt-3">OPINION</h6>
+
+        <article class="row border-bottom pb-3 ">
+          <div class="col-md-3">
+            <img src="images/profile.png" height="63" width="63" class="rounded-circle">
+          </div>
+          <div class="col-md-9">
+            <div class="card-block">
+              <h4 class="card-title font-17 font-weight-bold">Lorem ipsum dolor sit amet est solor</h4>
+              <p class="card-text font-14">By <span class="font-weight-bold">DONALD TRUMP</span></p>
+            </div>
+          </div>
+
+        </article>
+
+        <article class="row border-bottom pb-3 mt-2 ">
+          <div class="col-md-3">
+            <img src="images/profile.png" height="63" width="63" class="rounded-circle">
+          </div>
+          <div class="col-md-9">
+            <div class="card-block">
+              <h4 class="card-title font-17 font-weight-bold">Lorem ipsum dolor sit amet est solor</h4>
+              <p class="card-text font-14">By <span class="font-weight-bold">DONALD TRUMP</span></p>
+            </div>
+          </div>
+        </article>
+
+        <article class="row border-bottom pb-3 mt-2">
+          <div class="col-md-3">
+            <img src="images/profile.png" height="63" width="63" class="rounded-circle">
+          </div>
+          <div class="col-md-9">
+            <div class="card-block">
+              <h4 class="card-title font-17 font-weight-bold">Lorem ipsum dolor sit amet est solor</h4>
+              <p class="card-text font-14">By <span class="font-weight-bold">DONALD TRUMP</span></p>
+            </div>
+          </div>
+
+        </article>
+
+        <article class="row border-bottom pb-3 mt-2">
+          <div class="col-md-3">
+            <img src="images/profile.png" height="63" width="63" class="rounded-circle">
+          </div>
+          <div class="col-md-9">
+            <div class="card-block">
+              <h4 class="card-title font-17 font-weight-bold">Lorem ipsum dolor sit amet est solor</h4>
+              <p class="card-text font-14">By <span class="font-weight-bold">DONALD TRUMP</span></p>
+            </div>
+          </div>
+
+        </article>
+
+        <article class="row border-bottom pb-3 mt-2">
+          <div class="col-md-3">
+            <img src="images/profile.png" height="63" width="63" class="rounded-circle">
+          </div>
+          <div class="col-md-9">
+            <div class="card-block">
+              <h4 class="card-title font-17 font-weight-bold">Lorem ipsum dolor sit amet est solor</h4>
+              <p class="card-text font-14">By <span class="font-weight-bold">DONALD TRUMP</span></p>
+            </div>
+          </div>
+
+        </article>
+
+        <article class="row border-bottom pb-3 mt-2">
+          <div class="col-md-3">
+            <img src="images/profile.png" height="63" width="63" class="rounded-circle">
+          </div>
+          <div class="col-md-9">
+            <div class="card-block">
+              <h4 class="card-title font-17 font-weight-bold">Lorem ipsum dolor sit amet est solor</h4>
+              <p class="card-text font-14">By <span class="font-weight-bold">DONALD TRUMP</span></p>
+            </div>
+          </div>
+        </article>
+
+        <div class="card mt-3 bg-light">
+          <div class="card-body">
+            <div class="card-title d-flex">
+              <div class="">
+                <img src="./images/n.png" height="28" width="28" alt="N symbol" class="mt-2 mr-2 ">
+              </div>
+              <h5>START YOUR DAY WITH OUR TOP 5 ARTICLES</h5>
+            </div>
+
+            <input placeholder="Email address" class="w-100" />
+            <button type="button" class="btn btn-danger w-100 mt-3">
+              FREE SIGN UP >
+            </button>
+          </div>
+        </div>
+
       </div>
+      <!-- end 3rd column -->
     </div>
+
 
   </main>
 
