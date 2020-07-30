@@ -60,8 +60,20 @@ button {
  font-size: 17px;
 }
 
+main a {
+  text-decoration: none;
+  color: #333;
+}
+
+main a:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+  color: #333;
+}
+
 header a:hover {
  text-decoration: none;
+ color: red;
 }
 
 header i {
