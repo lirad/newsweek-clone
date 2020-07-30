@@ -65,7 +65,12 @@ main a {
   color: #333;
 }
 
-main a:hover {
+.article-tag a {
+  text-decoration: none;
+  color: red;
+}
+
+main a:hover:not {
   text-decoration: underline;
   text-decoration-color: red;
   color: #333;
