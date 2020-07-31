@@ -11,8 +11,6 @@
 
 ![image](https://user-images.githubusercontent.com/43865875/89058608-dd842400-d35f-11ea-82d9-bf0d800a9c88.png)
 
-The project is built using Html and Css with an extensive use of the grid, flex and float css properties.
-
 ## Built With
 
 - HTML
