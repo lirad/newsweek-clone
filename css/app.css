@@ -9,6 +9,15 @@ p {
   font-family: "Roboto Condensed", sans-serif;
 }
 
+.test {
+  transform: translate(-50%, 0%);
+  top: 0;
+  left: 50%;
+  max-height: 290px;
+  min-height: 206px;
+  object-fit: cover;
+}
+
 button {
   background-color: transparent;
   border: none;
@@ -173,6 +182,10 @@ header ul li input:focus {
   position: absolute;
   left: 0;
   right: 0;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 #vs span {
