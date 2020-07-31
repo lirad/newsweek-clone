@@ -12,7 +12,6 @@
 
 ![screenshot](./app-screenshot-clone-full.png)
 
-
 The project is built using Html and Css with an extensive use of the grid, flex and float css properties.
 
 ## Built With
@@ -42,11 +41,11 @@ Install and run a live server plugin on you IDE/Text editor and run it from the 
 
 ## Authors
 
-👤 **Cristian Viorel Ceamatu**
+👤 **Chad-Leigh Van Wyk**
 
-- Github: [@githubhandle](https://github.com/cristianCeamatu)
-- Twitter: [@twitterhandle](https://twitter.com/CeamatuV)
-- Linkedin: [linkedin](https://www.linkedin.com/in/ceamatu-cristian-viorel-7a5469136/)
+- Github:[@El-Potato-Slayer](https://github.com/El-Potato-Slayer)
+- Twitter:[@elpotatoslayer](https://twitter.com/elpotatoslayer)
+- LinkedIn:[@Chad Van Wyk](https://www.linkedin.com/in/chad-van-wyk-4228b21a6/?originalSubdomain=za)
 
 👤 **Diego Lira**
 
