@@ -206,7 +206,17 @@ header ul li input:focus {
   object-fit: cover;
 }
 
+
+
+.bg-gray {
+  background-color: #f4f5f6;
+}
+
 @media (max-width: 768px) {
+  #newsletter-img{
+    max-width: 191px;
+  }
+
   .subscribe-button {
     margin-left: 0;
     margin-right: 0;
@@ -239,6 +249,10 @@ header ul li input:focus {
 }
 
 @media (max-width: 1024px) {
+
+  #newsletter-img{
+    height: 283px;
+  }
   img.img-responsive-size,
   .centering-img {
     min-width: 327px;
