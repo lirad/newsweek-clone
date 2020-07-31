@@ -41,9 +41,6 @@ button {
 }
 
 .subscribe-button {
-  background-color: #ffe500;
-  color: #100f04;
-  border: none;
   border-radius: 15px;
   margin-left: 5px;
   margin-right: 15px;
@@ -100,6 +97,10 @@ header i {
   position: sticky;
   top: 0;
   height: 1136px;
+}
+
+.fill-red {
+  fill: red;
 }
 
 .font-17 {
@@ -206,14 +207,12 @@ header ul li input:focus {
   object-fit: cover;
 }
 
-
-
 .bg-gray {
   background-color: #f4f5f6;
 }
 
 @media (max-width: 768px) {
-  #newsletter-img{
+  #newsletter-img {
     max-width: 191px;
   }
 
@@ -223,8 +222,6 @@ header ul li input:focus {
   }
   .subscribe-button a {
     font-size: 10px;
-    padding: 0;
-    white-space: nowrap;
   }
   .responsive-header button i {
     font-size: 1rem;
@@ -249,14 +246,23 @@ header ul li input:focus {
 }
 
 @media (max-width: 1024px) {
-
-  #newsletter-img{
+  #newsletter-img {
     height: 283px;
   }
+
+  .subscribe-button a {
+    padding: 0;
+    white-space: nowrap;
+  }
+
   img.img-responsive-size,
   .centering-img {
     min-width: 327px;
     max-width: 327px;
+  }
+
+  .border-md-right {
+    border-right: 1px solid lightgray;
   }
 }
 
