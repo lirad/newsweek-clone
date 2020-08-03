@@ -99,7 +99,6 @@ main .card-title a:hover {
 }
 
 header i {
-  /* display: none; */
   color: #fb9b93;
 }
 
@@ -279,5 +278,14 @@ header ul li input:focus {
     min-width: 435px;
     max-width: 435px;
     max-height: 290px;
+  }
+
+  #newsletter {
+    min-height: 282px;
+    overflow: hidden;
+  }
+
+  #newsletter img {
+    height: 125%;
   }
 }
