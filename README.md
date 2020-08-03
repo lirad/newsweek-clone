@@ -1,29 +1,22 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Positioning and Floating Elements project: New York Times article page
-
-> This is a New York Times article page clone using HTML and CSS3.
-
-## Screenshots of original website
-
-![screenshot](./app-screenshot-original-full.png)
+# Responsive Design and CSS Frameworks: Newsweek Homepage
+> The purpose of this project was to re-create a fully responsive Newsweek homepage using the Bootstrap library.
 
 ## Screenshots of our clone website
 
-![screenshot](./app-screenshot-clone-full.png)
-
-
-The project is built using Html and Css with an extensive use of the grid, flex and float css properties.
+![image](https://user-images.githubusercontent.com/43865875/89058608-dd842400-d35f-11ea-82d9-bf0d800a9c88.png)
 
 ## Built With
 
 - HTML
 - CSS3
 - Font awesome icons
+- Bootstrap 4
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/cristianCeamatu/microverse-new-york-times-article-page/adding-article-page/index.html)
+[Live Demo Link](https://raw.githack.com/lirad/newsweek-clone/feature-branch/index.html)
 
 ## To get a local copy up and running follow these simple example steps.
 
@@ -42,11 +35,11 @@ Install and run a live server plugin on you IDE/Text editor and run it from the 
 
 ## Authors
 
-👤 **Cristian Viorel Ceamatu**
+👤 **Chad-Leigh Van Wyk**
 
-- Github: [@githubhandle](https://github.com/cristianCeamatu)
-- Twitter: [@twitterhandle](https://twitter.com/CeamatuV)
-- Linkedin: [linkedin](https://www.linkedin.com/in/ceamatu-cristian-viorel-7a5469136/)
+- Github:[@El-Potato-Slayer](https://github.com/El-Potato-Slayer)
+- Twitter:[@elpotatoslayer](https://twitter.com/elpotatoslayer)
+- LinkedIn:[@Chad Van Wyk](https://www.linkedin.com/in/chad-van-wyk-4228b21a6/?originalSubdomain=za)
 
 👤 **Diego Lira**
 
