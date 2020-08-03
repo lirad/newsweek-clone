@@ -51,8 +51,6 @@ header ul li a {
   white-space: nowrap;
 }
 
-
-
 .login-button span {
   font-size: 20px;
   font-weight: 600;
@@ -218,9 +216,9 @@ header ul li input:focus {
   }
 
   #editors-pick img.img-responsive-size,
-  .centering-img {
+  .centering-img,
+  #magazine figure > img {
     min-width: 100%;
-    
   }
 
   img.img-responsive-size,
@@ -304,9 +302,9 @@ header ul li input:focus {
 
   img.img-responsive-size,
   .centering-img {
-    min-width: 435px;
+    min-width: 290px;
     max-width: 435px;
-    max-height: 290px;
+    max-height: 193px;
   }
 
   #newsletter {
