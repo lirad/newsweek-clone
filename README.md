@@ -3,10 +3,6 @@
 # Responsive Design and CSS Frameworks: Newsweek Homepage
 > The purpose of this project was to re-create a fully responsive Newsweek homepage using the Bootstrap library.
 
-## Screenshots of original website
-
-![Screenshot_2020-07-31 Newsweek](https://user-images.githubusercontent.com/43865875/89058879-6b600f00-d360-11ea-8a6e-6354c02e4bb3.jpg)
-
 ## Screenshots of our clone website
 
 ![image](https://user-images.githubusercontent.com/43865875/89058608-dd842400-d35f-11ea-82d9-bf0d800a9c88.png)
