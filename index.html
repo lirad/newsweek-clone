@@ -1,1224 +1,698 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/app.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <title>Newsweek Clone</title>
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/app.css" />
 
-  <body class="container-fluid">
-    <header>
-      <div class="bg-red header-top text-white">
-        <div class="row d-none d-lg-flex">
-          <div class="col-4 p-3">
-            <div class="row ml-3">
-              <img
-                src="images/weather-icon.png"
-                width="20"
-                height="20"
-                alt="weather icon"
-              />
-              <a href="#" class="text-white"><b> 24°Rio de Janeiro, BR </b></a>
-            </div>
-            <div class="row ml-3 mt-2">
-              <span>Wed, Jul 29, 2020</span>
-            </div>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <title>Newsweek Clone</title>
+</head>
+
+<body class="container-fluid">
+  <header>
+    <div class="bg-red header-top text-white">
+      <div class="row d-none d-lg-flex">
+        <div class="col-4 p-3">
+          <div class="row ml-3">
+            <img src="images/weather-icon.png" width="20" height="20" alt="weather icon" />
+            <a href="#" class="text-white"><b> 24°Rio de Janeiro, BR </b></a>
           </div>
-          <div class="col-4 mt-2">
-            <a href="#" class="main-logo fill-white">
-              <img src="images/logo.svg" alt="Logo" />
-            </a>
-          </div>
-          <div
-            class="col-4 d-flex align-items-end justify-content-end mb-3 pl-5"
-          >
-            <button type="button" class="btn btn-link login-button pt-2 mr-1">
-              <span class="text-white">LOGIN</span>
-            </button>
-            <button type="button" class="btn btn-warning subscribe-button p-1">
-              <span class="text-dark">SUBSCRIBE ></span>
-            </button>
+          <div class="row ml-3 mt-2">
+            <span>Wed, Jul 29, 2020</span>
           </div>
         </div>
-
-        <nav
-          class="row d-lg-none d-md-flex py-2 px-3 responsive-header bg-red navbar sticky-top"
-        >
-          <div class="col-6 col-md-7">
-            <a href="#" class="main-logo fill-white">
-              <img width="132" src="images/logo.svg" alt="Logo" />
-            </a>
-          </div>
-          <div
-            class="col-6 col-md-5 d-flex justify-content-end align-items-center"
-          >
-            <button type="button" class="mr-1">
-              <i class="fa fa-user fa-2x d-md-none d-sm-block"></i>
-            </button>
-
-            <button type="button" class="login-button d-none d-md-inline mx-1">
-              <span class="text-dark"> LOGIN </span>
-            </button>
-            <button
-              type="button"
-              class="btn btn-warning subscribe-button d-flex align-item-center ml-1"
-            >
-              <span class="text-dark">SUBSCRIBE ></span>
-            </button>
-            <button type="button">
-              <i id="menu-btn" class="fa fa-bars fa-2x"></i>
-            </button>
-          </div>
-        </nav>
+        <div class="col-4 mt-2">
+          <a href="#" class="main-logo fill-white">
+            <img src="images/logo.svg" alt="Logo" />
+          </a>
+        </div>
+        <div class="col-4 d-flex align-items-end justify-content-end mb-3 pl-5">
+          <button type="button" class="btn btn-link login-button pt-2 mr-1">
+            <span class="text-white">LOGIN</span>
+          </button>
+          <button type="button" class="btn btn-warning subscribe-button p-1">
+            <span class="text-dark">SUBSCRIBE ></span>
+          </button>
+        </div>
       </div>
 
-      <div class="row d-none d-lg-block">
-        <div class="col-12">
-          <nav class="nav-top pt-2">
-            <ul
-              class="list-unstyled d-flex justify-content-around align-items-center"
-            >
-              <li class="text-center w-100"><a href="#">U.S</a></li>
-              <li class="text-center w-100"><a href="#">World</a></li>
-              <li class="text-center w-100"><a href="#">Business</a></li>
-              <li class="text-center w-100"><a href="#">Tech & Science</a></li>
-              <li class="text-center w-100"><a href="#">Culture</a></li>
-              <li class="text-center w-100"><a href="#">Newsgeek</a></li>
-              <li class="text-center w-100"><a href="#">Sports</a></li>
-              <li class="text-center w-100"><a href="#">Health</a></li>
-              <li class="text-center w-100"><a href="#">The Debate</a></li>
-              <li class="text-center w-100"><a href="#">Vantage</a></li>
-              <li class="text-center w-100"><a href="#">Weather</a></li>
-              <li class="text-center w-100">
-                <div class="d-flex align-items-center">
-                  <input type="text" placeholder="Search" />
-                  <i
-                    class="fa fa-search fa-lg ml-2 text-dark font-weight-light"
-                  ></i>
-                </div>
-              </li>
-            </ul>
-          </nav>
+      <nav class="row d-lg-none d-md-flex py-2 px-3 responsive-header bg-red navbar sticky-top">
+        <div class="col-6 col-md-7">
+          <a href="#" class="main-logo fill-white">
+            <img width="132" src="images/logo.svg" alt="Logo" />
+          </a>
         </div>
+        <div class="col-6 col-md-5 d-flex justify-content-end align-items-center">
+          <button type="button" class="mr-1">
+            <i class="fa fa-user fa-2x d-md-none d-sm-block"></i>
+          </button>
 
-        <nav class="nav-bottom">
-          <ul
-            class="d-flex justify-content-start list-unstyled px-4 py-3 border-top border-bottom"
-          >
-            <li class="px-3"><a href="#">TRENDING</a></li>
-            <li class="px-3"><a href="#">DONALD TRUMP</a></li>
-            <li class="px-3"><a href="#">JOE BIDEN</a></li>
-            <li class="px-3"><a href="#">CHINA</a></li>
-            <li class="px-3"><a href="#">CORONA VIRUS</a></li>
-            <li class="px-3"><a href="#">2020 ELECTION</a></li>
+          <button type="button" class="login-button d-none d-md-inline mx-1">
+            <span class="text-white"> LOGIN </span>
+          </button>
+          <button type="button" class="btn btn-warning subscribe-button d-flex align-item-center ml-1">
+            <span class="text-dark">SUBSCRIBE ></span>
+          </button>
+          <button type="button">
+            <i id="menu-btn" class="fa fa-bars fa-2x"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <div class="row d-none d-lg-block">
+      <div class="col-12">
+        <nav class="nav-top pt-2">
+          <ul class="list-unstyled d-flex justify-content-around align-items-center">
+            <li class="text-center w-100"><a href="#">U.S</a></li>
+            <li class="text-center w-100"><a href="#">World</a></li>
+            <li class="text-center w-100"><a href="#">Business</a></li>
+            <li class="text-center w-100"><a href="#">Tech & Science</a></li>
+            <li class="text-center w-100"><a href="#">Culture</a></li>
+            <li class="text-center w-100"><a href="#">Newsgeek</a></li>
+            <li class="text-center w-100"><a href="#">Sports</a></li>
+            <li class="text-center w-100"><a href="#">Health</a></li>
+            <li class="text-center w-100"><a href="#">The Debate</a></li>
+            <li class="text-center w-100"><a href="#">Vantage</a></li>
+            <li class="text-center w-100"><a href="#">Weather</a></li>
+            <li class="text-center w-100">
+              <div class="d-flex align-items-center">
+                <input type="text" placeholder="Search" />
+                <i class="fa fa-search fa-lg ml-2 text-dark font-weight-light"></i>
+              </div>
+            </li>
           </ul>
         </nav>
       </div>
-    </header>
 
-    <main>
-      <div class="container-fluid p-md-2 mt-2 p-sm-0">
-        <div class="row bg-white">
-          <div
-            class="col-12 col-lg-3 col-md-6 col-sm-12 p2 sticky1 order-1 order-md-1 order-lg-1"
-          >
-            <h6 class="text-secondary font-weight-bold">FEATURED STORIES</h6>
-            <article class="card mb-3 border-0">
-              <figure class="mb-1 position-relative">
-                <img src="images/image1.jpg" class="card-img-top" alt="..." />
-                <figcaption class="position-absolute article-tag">
-                  <a href="#">WORLD</a>
-                </figcaption>
-              </figure>
-              <div class="card-body pt-1 p-md-0 pl-0">
-                <h4 class="card-title font-weight-bold">
-                  <a href="#"
-                    >U.S. Extends Lebanon 'National Emergency' Amid Crises,
-                    Israeli Attacks
-                  </a>
-                </h4>
-                <p class="card-text font-weight-light">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Quas, sint repellendus, quam rerum saepe voluptas iure
-                  architecto deleniti at debitis natus et eius ab fugiat
-                  consectetur incidunt unde id? Fugiat?
-                </p>
-              </div>
-            </article>
+      <nav class="nav-bottom">
+        <ul class="d-flex justify-content-start list-unstyled px-4 py-3 border-top border-bottom">
+          <li class="px-3"><a href="#">TRENDING</a></li>
+          <li class="px-3"><a href="#">DONALD TRUMP</a></li>
+          <li class="px-3"><a href="#">JOE BIDEN</a></li>
+          <li class="px-3"><a href="#">CHINA</a></li>
+          <li class="px-3"><a href="#">CORONA VIRUS</a></li>
+          <li class="px-3"><a href="#">2020 ELECTION</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-            <article class="card mb-3 border-0">
-              <figure class="mb-1 position-relative">
-                <img src="images/image2.jpg" class="card-img-top" alt="..." />
-                <figcaption class="position-absolute article-tag">
-                  <a href="#">US</a>
-                </figcaption>
-              </figure>
-              <div class="card-body pt-1 p-md-0 pl-0">
-                <h4 class="card-title font-weight-bold">
-                  <a href="#"
-                    >U.S. Extends Lebanon 'National Emergency' Amid Crises,
-                    Israeli Attacks
-                  </a>
-                </h4>
-                <p class="card-text font-weight-light">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Quas, sint repellendus, quam rerum saepe voluptas iure
-                  architecto deleniti at debitis natus et eius ab fugiat
-                  consectetur incidunt unde id? Fugiat?
-                </p>
-              </div>
-            </article>
-
-            <article class="card mb-3 border-0">
-              <figure class="mb-1 position-relative">
-                <img src="images/image3.jpg" class="card-img-top" alt="..." />
-                <figcaption class="position-absolute article-tag">
-                  <a href="#">US</a>
-                </figcaption>
-              </figure>
-              <div class="card-body pt-1 p-md-0 pl-0">
-                <h4 class="card-title font-weight-bold">
-                  <a href="#"
-                    >U.S. Extends Lebanon 'National Emergency' Amid Crises,
-                    Israeli Attacks
-                  </a>
-                </h4>
-                <p class="card-text font-weight-light">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Quas, sint repellendus, quam rerum saepe voluptas iure
-                  architecto deleniti at debitis natus et eius ab fugiat
-                  consectetur incidunt unde id? Fugiat?
-                </p>
-              </div>
-            </article>
-
-            <article class="card mb-3 border-0">
-              <figure class="mb-1 position-relative">
-                <img src="images/image4.jpg" class="card-img-top" alt="..." />
-                <figcaption class="position-absolute article-tag">
-                  <a href="#">US</a>
-                </figcaption>
-              </figure>
-              <div class="card-body pt-1 p-md-0 pl-0">
-                <h4 class="card-title font-weight-bold">
-                  <a href="#"
-                    >U.S. Extends Lebanon 'National Emergency' Amid Crises,
-                    Israeli Attacks
-                  </a>
-                </h4>
-                <p class="card-text font-weight-light">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Quas, sint repellendus, quam rerum saepe voluptas iure
-                  architecto deleniti at debitis natus et eius ab fugiat
-                  consectetur incidunt unde id? Fugiat?
-                </p>
-              </div>
-            </article>
-
-            <article class="card mb-3 border-0">
-              <figure class="mb-1 position-relative">
-                <img src="images/image5.jpg" class="card-img-top" alt="..." />
-                <figcaption class="position-absolute article-tag">
-                  <a href="#">WORLD</a>
-                </figcaption>
-              </figure>
-              <div class="card-body pt-1 p-md-0 pl-0">
-                <h4 class="card-title font-weight-bold">
-                  <a href="#"
-                    >U.S. Extends Lebanon 'National Emergency' Amid Crises,
-                    Israeli Attacks
-                  </a>
-                </h4>
-                <p class="card-text font-weight-light">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Quas, sint repellendus, quam rerum saepe voluptas iure
-                  architecto deleniti at debitis natus et eius ab fugiat
-                  consectetur incidunt unde id? Fugiat?
-                </p>
-              </div>
-            </article>
-          </div>
-
-          <div
-            class="col-12 col-md-6 col-lg-6 col-sm-12 order-3 order-md-2 order-lg-2"
-          >
-            <h6 class="text-secondary font-weight-bold">FEATURED STORIES</h6>
-            <article class="card mb-3 border-0">
-              <figure class="mb-1 position-relative">
-                <img src="images/image2.jpg" class="card-img-top" alt="..." />
-                <figcaption class="position-absolute article-tag">
-                  <a href="#">WORLD</a>
-                </figcaption>
-              </figure>
-              <div class="card-body pt-1 p-md-0 pl-0">
-                <h4 class="card-title font-weight-bold">
-                  <a href="#"
-                    >U.S. Extends Lebanon 'National Emergency' Amid Crises,
-                    Israeli Attacks</a
-                  >
-                </h4>
-                <p class="card-text font-weight-light">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Quas, sint repellendus, quam rerum saepe voluptas iure
-                  architecto deleniti at debitis natus et eius ab fugiat
-                  consectetur incidunt unde id? Fugiat?
-                </p>
-              </div>
-            </article>
-
-            <div class="row">
-              <div class="col">
-                <article class="card mb-3 border-0">
-                  <figure class="mb-0 position-relative">
-                    <img
-                      src="images/image9.jpg"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                  </figure>
-                  <div class="card-body pt-1 p-md-0 pl-0">
-                    <h6 class="card-title font-weight-bold">
-                      <a href="#" class="text-secondary"
-                        >U.S. Extends Lebanon 'National Emergency' Amid Crises,
-                        Israeli Attacks
-                      </a>
-                    </h6>
-                  </div>
-                </article>
-              </div>
-              <div class="col">
-                <article class="card mb-3 border-0">
-                  <figure class="mb-0 position-relative">
-                    <img
-                      src="images/image10.jpg"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                  </figure>
-                  <div class="card-body pt-1 p-md-0 pl-0">
-                    <h6 class="card-title font-weight-bold">
-                      <a href="#" class="text-secondary"
-                        >U.S. Extends Lebanon 'National Emergency' Amid Crises,
-                        Israeli Attacks
-                      </a>
-                    </h6>
-                  </div>
-                </article>
-              </div>
-              <div class="col">
-                <article class="card mb-3 border-0">
-                  <figure class="mb-0 position-relative">
-                    <img
-                      src="images/image11.jpg"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                  </figure>
-                  <div class="card-body pt-1 p-md-0 pl-0">
-                    <h6 class="card-title font-weight-bold">
-                      <a href="#" class="text-secondary"
-                        >U.S. Extends Lebanon 'National Emergency' Amid Crises,
-                        Israeli Attacks
-                      </a>
-                    </h6>
-                  </div>
-                </article>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <article class="card mb-3 border-0">
-                  <figure class="mb-0 position-relative">
-                    <img
-                      src="images/image12.jpg"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                  </figure>
-                  <div class="card-body pt-1 p-md-0 pl-0">
-                    <h6 class="card-title font-weight-bold">
-                      <a href="#" class="text-secondary"
-                        >U.S. Extends Lebanon 'National Emergency' Amid Crises,
-                        Israeli Attacks
-                      </a>
-                    </h6>
-                  </div>
-                </article>
-              </div>
-              <div class="col">
-                <article class="card mb-3 border-0">
-                  <figure class="mb-0 position-relative">
-                    <img
-                      src="images/image13.jpg"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                  </figure>
-                  <div class="card-body pt-1 p-md-0 pl-0">
-                    <h6 class="card-title font-weight-bold">
-                      <a href="#" class="text-secondary"
-                        >U.S. Extends Lebanon 'National Emergency' Amid Crises,
-                        Israeli Attacks
-                      </a>
-                    </h6>
-                  </div>
-                </article>
-              </div>
-              <div class="col">
-                <article class="card mb-3 border-0">
-                  <figure class="mb-0 position-relative">
-                    <img
-                      src="images/image14.jpg"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                  </figure>
-                  <div class="card-body pt-1 p-md-0 pl-0">
-                    <h6 class="card-title font-weight-bold">
-                      <a href="#" class="text-secondary"
-                        >U.S. Extends Lebanon 'National Emergency' Amid Crises,
-                        Israeli Attacks
-                      </a>
-                    </h6>
-                  </div>
-                </article>
-              </div>
-            </div>
-
-            <div class="sticky2">
-              <h6 class="font-weight-bold text-secondary">MORE STORIES</h6>
-
-              <article class="row border-top pt-3 pb-3 px-2">
-                <div class="">
-                  <img
-                    src="images/image15.jpg"
-                    class="float-left mr-2"
-                    alt="Article image"
-                  />
-                  <h4 class="card-title font-17 font-weight-bold">
-                    <a href="#"
-                      >White House Funds Far-Right Fundamentalists to Lie, China
-                      Ambassador Claims</a
-                    >
-                  </h4>
-                  <p class="card-text font-14">
-                    The mosques that China is alleged to have destroyed were
-                    just "being renovated," Liu Xiaoming told a press
-                    conference.
-                  </p>
-                </div>
-              </article>
-
-              <article class="row border-top pt-3 pb-3 px-2">
-                <div class="">
-                  <img
-                    src="images/image16.jpg"
-                    class="float-left mr-2"
-                    alt="Article Image"
-                  />
-                  <h4 class="card-title font-17 font-weight-bold">
-                    <a href="#"
-                      >White House Funds Far-Right Fundamentalists to Lie, China
-                      Ambassador Claims</a
-                    >
-                  </h4>
-                  <p class="card-text font-14">
-                    The mosques that China is alleged to have destroyed were
-                    just "being renovated," Liu Xiaoming told a press
-                    conference.
-                  </p>
-                </div>
-              </article>
-
-              <article class="row border-top pt-3 pb-3 px-2">
-                <div class="">
-                  <img
-                    src="images/image17.jpg"
-                    class="float-left mr-2"
-                    alt="Article Image"
-                  />
-                  <h4 class="card-title font-17 font-weight-bold">
-                    <a href="#"
-                      >White House Funds Far-Right Fundamentalists to Lie, China
-                      Ambassador Claims</a
-                    >
-                  </h4>
-                  <p class="card-text font-14">
-                    The mosques that China is alleged to have destroyed were
-                    just "being renovated," Liu Xiaoming told a press
-                    conference.
-                  </p>
-                </div>
-              </article>
-
-              <article class="row border-top pt-3 pb-3 px-2">
-                <div class="">
-                  <img
-                    src="images/image18.jpg"
-                    class="float-left mr-2"
-                    alt="Article Image"
-                  />
-                  <h4 class="card-title font-17 font-weight-bold">
-                    <a href="#"
-                      >White House Funds Far-Right Fundamentalists to Lie, China
-                      Ambassador Claims</a
-                    >
-                  </h4>
-                  <p class="card-text font-14">
-                    The mosques that China is alleged to have destroyed were
-                    just "being renovated," Liu Xiaoming told a press
-                    conference.
-                  </p>
-                </div>
-              </article>
-
-              <article class="row border-top pt-3 pb-3 px-2">
-                <div class="">
-                  <img
-                    src="images/image19.jpg"
-                    class="float-left mr-2"
-                    alt="Article Image"
-                  />
-                  <h4 class="card-title font-17 font-weight-bold">
-                    <a href="#"
-                      >White House Funds Far-Right Fundamentalists to Lie, China
-                      Ambassador Claims</a
-                    >
-                  </h4>
-                  <p class="card-text font-14">
-                    The mosques that China is alleged to have destroyed were
-                    just "being renovated," Liu Xiaoming told a press
-                    conference.
-                  </p>
-                </div>
-              </article>
-
-              <article class="row border-top pt-3 pb-3 px-2">
-                <div class="">
-                  <img
-                    src="images/image20.jpg"
-                    class="float-left mr-2"
-                    alt="Article Image"
-                  />
-                  <h4 class="card-title font-17 font-weight-bold">
-                    <a href="#"
-                      >White House Funds Far-Right Fundamentalists to Lie, China
-                      Ambassador Claims</a
-                    >
-                  </h4>
-                  <p class="card-text font-14">
-                    The mosques that China is alleged to have destroyed were
-                    just "being renovated," Liu Xiaoming told a press
-                    conference.
-                  </p>
-                </div>
-              </article>
-
-              <article class="row border-top pt-3 pb-3 px-2">
-                <div class="">
-                  <img
-                    src="images/image21.jpg"
-                    class="float-left mr-2"
-                    alt="Article Image"
-                  />
-                  <h4 class="card-title font-17 font-weight-bold">
-                    <a href="#"
-                      >White House Funds Far-Right Fundamentalists to Lie, China
-                      Ambassador Claims</a
-                    >
-                  </h4>
-                  <p class="card-text font-14">
-                    The mosques that China is alleged to have destroyed were
-                    just "being renovated," Liu Xiaoming told a press
-                    conference.
-                  </p>
-                </div>
-              </article>
-
-              <article class="row border-top pt-3 pb-3 px-2">
-                <div class="">
-                  <img
-                    src="images/image22.jpg"
-                    class="float-left mr-2"
-                    alt="Article Image"
-                  />
-                  <h4 class="card-title font-17 font-weight-bold">
-                    <a href="#"
-                      >White House Funds Far-Right Fundamentalists to Lie, China
-                      Ambassador Claims</a
-                    >
-                  </h4>
-                  <p class="card-text font-14">
-                    The mosques that China is alleged to have destroyed were
-                    just "being renovated," Liu Xiaoming told a press
-                    conference.
-                  </p>
-                </div>
-              </article>
-
-              <article class="row border-top pt-3 pb-3 px-2">
-                <div class="">
-                  <img
-                    src="images/image23.jpg"
-                    class="float-left mr-2"
-                    alt="Article Image"
-                  />
-                  <h4 class="card-title font-17 font-weight-bold">
-                    <a href="#"
-                      >White House Funds Far-Right Fundamentalists to Lie, China
-                      Ambassador Claims</a
-                    >
-                  </h4>
-                  <p class="card-text font-14">
-                    The mosques that China is alleged to have destroyed were
-                    just "being renovated," Liu Xiaoming told a press
-                    conference.
-                  </p>
-                </div>
-              </article>
-
-              <article class="row border-top pt-3 pb-3 px-2">
-                <div class="">
-                  <img
-                    src="images/image24.jpg"
-                    class="float-left mr-2"
-                    alt="Article Image"
-                  />
-                  <h4 class="card-title font-17 font-weight-bold">
-                    <a href="#"
-                      >White House Funds Far-Right Fundamentalists to Lie, China
-                      Ambassador Claims</a
-                    >
-                  </h4>
-                  <p class="card-text font-14">
-                    The mosques that China is alleged to have destroyed were
-                    just "being renovated," Liu Xiaoming told a press
-                    conference.
-                  </p>
-                </div>
-              </article>
-
-              <article class="row border-top pt-3 pb-3 px-2">
-                <div class="">
-                  <img
-                    src="images/image25.jpg"
-                    class="float-left mr-2"
-                    alt="Article Image"
-                  />
-                  <h4 class="card-title font-17 font-weight-bold">
-                    <a href="#"
-                      >White House Funds Far-Right Fundamentalists to Lie, China
-                      Ambassador Claims</a
-                    >
-                  </h4>
-                  <p class="card-text font-14">
-                    The mosques that China is alleged to have destroyed were
-                    just "being renovated," Liu Xiaoming told a press
-                    conference.
-                  </p>
-                </div>
-              </article>
-            </div>
-          </div>
-
-          <div
-            class="col-12 col-md-12 col-sm-12 col-lg-3 sticky3 order-2 order-md-3 order-lg-3"
-          >
-            <h6 class="text-secondary font-weight-bold">THE DEBATE</h6>
-            <article class="row border-top-3 pt-3">
-              <div class="col-md-3 col-3">
-                <img
-                  src="images/profile.png"
-                  height="63"
-                  width="63"
-                  class="rounded-circle"
-                  alt="Profile picture"
-                />
-              </div>
-              <div class="col-md-9 col-9">
-                <div class="card-block">
-                  <h4 class="card-title font-17 font-weight-bold">
-                    <a href="#">Lorem ipsum dolor sit amet est solor</a>
-                  </h4>
-                  <p class="card-text font-14">
-                    By <span class="font-weight-bold">DONALD TRUMP</span>
-                  </p>
-                </div>
-              </div>
-            </article>
-            <div id="vs" class=" ">
-              <span class="">VS</span>
-            </div>
-
-            <article class="row border-bottom-3 pb-3">
-              <div class="col-md-9 col-9">
-                <div class="card-block">
-                  <h4 class="card-title font-17 font-weight-bold">
-                    <a href="#">Lorem ipsum dolor sit amet est solor</a>
-                  </h4>
-                  <p class="card-text font-14">
-                    By <span class="font-weight-bold">DONALD TRUMP</span>
-                  </p>
-                </div>
-              </div>
-              <div class="col-md-3 col-3">
-                <img
-                  src="images/profile.png"
-                  height="63"
-                  width="63"
-                  class="rounded-circle"
-                  alt="Profile picture"
-                />
-              </div>
-            </article>
-
-            <h6 class="text-secondary font-weight-bold mt-3">OPINION</h6>
-
-            <article class="row border-bottom pb-3">
-              <div class="col-md-3 col-3">
-                <img
-                  src="images/profile.png"
-                  height="63"
-                  width="63"
-                  class="rounded-circle"
-                  alt="Profile picture"
-                />
-              </div>
-              <div class="col-md-9 col-9">
-                <div class="card-block">
-                  <h4 class="card-title font-17 font-weight-bold">
-                    <a href="#">Lorem ipsum dolor sit amet est solor</a>
-                  </h4>
-                  <p class="card-text font-14">
-                    By <span class="font-weight-bold">DONALD TRUMP</span>
-                  </p>
-                </div>
-              </div>
-            </article>
-
-            <article class="row border-bottom pb-3 mt-2">
-              <div class="col-md-3 col-3">
-                <img
-                  src="images/profile.png"
-                  height="63"
-                  width="63"
-                  class="rounded-circle"
-                  alt="Profile picture"
-                />
-              </div>
-              <div class="col-md-9 col-9">
-                <div class="card-block">
-                  <h4 class="card-title font-17 font-weight-bold">
-                    <a href="#">Lorem ipsum dolor sit amet est solor</a>
-                  </h4>
-                  <p class="card-text font-14">
-                    By <span class="font-weight-bold">DONALD TRUMP</span>
-                  </p>
-                </div>
-              </div>
-            </article>
-
-            <article class="row border-bottom pb-3 mt-2">
-              <div class="col-md-3 col-3">
-                <img
-                  src="images/profile.png"
-                  height="63"
-                  width="63"
-                  class="rounded-circle"
-                  alt="Profile picture"
-                />
-              </div>
-              <div class="col-md-9 col-9">
-                <div class="card-block">
-                  <h4 class="card-title font-17 font-weight-bold">
-                    <a href="#">Lorem ipsum dolor sit amet est solor</a>
-                  </h4>
-                  <p class="card-text font-14">
-                    By <span class="font-weight-bold">DONALD TRUMP</span>
-                  </p>
-                </div>
-              </div>
-            </article>
-
-            <article class="row border-bottom pb-3 mt-2">
-              <div class="col-md-3 col-3">
-                <img
-                  src="images/profile.png"
-                  height="63"
-                  width="63"
-                  class="rounded-circle"
-                  alt="Profile picture"
-                />
-              </div>
-              <div class="col-md-9 col-9">
-                <div class="card-block">
-                  <h4 class="card-title font-17 font-weight-bold">
-                    <a href="#">Lorem ipsum dolor sit amet est solor</a>
-                  </h4>
-                  <p class="card-text font-14">
-                    By <span class="font-weight-bold">DONALD TRUMP</span>
-                  </p>
-                </div>
-              </div>
-            </article>
-
-            <article class="row border-bottom pb-3 mt-2">
-              <div class="col-md-3 col-3">
-                <img
-                  src="images/profile.png"
-                  height="63"
-                  width="63"
-                  class="rounded-circle"
-                  alt="Profile picture"
-                />
-              </div>
-              <div class="col-md-9 col-9">
-                <div class="card-block">
-                  <h4 class="card-title font-17 font-weight-bold">
-                    <a href="#">Lorem ipsum dolor sit amet est solor</a>
-                  </h4>
-                  <p class="card-text font-14">
-                    By <span class="font-weight-bold">DONALD TRUMP</span>
-                  </p>
-                </div>
-              </div>
-            </article>
-
-            <article class="row border-bottom pb-3 mt-2">
-              <div class="col-md-3 col-3">
-                <img
-                  src="images/profile.png"
-                  height="63"
-                  width="63"
-                  class="rounded-circle"
-                  alt="Profile picture"
-                />
-              </div>
-              <div class="col-md-9 col-9">
-                <div class="card-block">
-                  <h4 class="card-title font-17 font-weight-bold">
-                    <a href="#">Lorem ipsum dolor sit amet est solor</a>
-                  </h4>
-                  <p class="card-text font-14">
-                    By <span class="font-weight-bold">DONALD TRUMP</span>
-                  </p>
-                </div>
-              </div>
-            </article>
-
-            <div class="card mt-3 mb-3 bg-light">
-              <div class="card-body">
-                <div class="card-title d-flex">
-                  <div class="">
-                    <img
-                      src="./images/n.png"
-                      height="28"
-                      width="28"
-                      alt="N symbol"
-                      class="mt-2 mr-2"
-                    />
-                  </div>
-                  <h5>START YOUR DAY WITH OUR TOP 5 ARTICLES</h5>
-                </div>
-
-                <input placeholder="Email address" class="w-100" />
-                <button type="button" class="btn btn-danger w-100 mt-3">
-                  FREE SIGN UP >
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container-fluid p-md-2 mt-2 p-sm-0">
-        <div class="row">
-          <div class="col-12 p-sm-0">
-            <div
-              class="d-flex border-bottom py-1 bg-white justify-content-center text-center mx-auto pt-2"
-            >
-              <img src="./images/n.png" height="28" width="28" alt="N symbol" />
-              <h6 class="ml-1 mt-1">IN THE MAGAZINE</h6>
-            </div>
-          </div>
-        </div>
-
-        <div class="row mb-4 d-flex align-itens-baseline bg-white pt-3">
-          <article class="card border-0 col-12 col-md-3">
-            <figure class="position-relative mb-0">
-              <img src="./images/image26.jpg" style="width: 100%;" alt="" />
+  <main>
+    <div class="container-fluid p-md-2 mt-2 p-sm-0">
+      <div class="row bg-white">
+        <div class="col-12 col-lg-3 col-md-6 col-sm-12 p2 sticky1 order-1 order-md-1 order-lg-1">
+          <h6 class="text-secondary font-weight-bold">FEATURED STORIES</h6>
+          <article class="card mb-3 border-0">
+            <figure class="mb-1 position-relative">
+              <img src="images/image1.jpg" class="card-img-top" alt="..." />
               <figcaption class="position-absolute article-tag">
-                <a href="#">AUGUST 7 ISSUE</a>
+                <a href="#">WORLD</a>
               </figcaption>
             </figure>
-            <div class="card-body text-center bg-light p-2">
-              <a href="#" class="p-0 m-0">
-                <h5 class="card-title font-weight-bold p-0 m-0">
-                  SEE ALL FEATURES
-                </h5>
-              </a>
+            <div class="card-body pt-1 p-md-0 pl-0">
+              <h4 class="card-title font-weight-bold">
+                <a href="#">U.S. Extends Lebanon 'National Emergency' Amid Crises,
+                  Israeli Attacks
+                </a>
+              </h4>
+              <p class="card-text font-weight-light">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Quas, sint repellendus, quam rerum saepe voluptas iure
+                architecto deleniti at debitis natus et eius ab fugiat
+                consectetur incidunt unde id? Fugiat?
+              </p>
             </div>
           </article>
 
-          <article class="card border-0 col-12 col-md-3">
-            <figure class="mb-0 position-relative overflow-hidden">
-              <img
-                class="position-relative img-responsive-size centering-img"
-                src="./images/image27.jpg"
-                alt=""
-              />
-              <figcaption class="mt-3">
-                <span class="bg-danger p-1 font-weight-bold text-white"
-                  >COVER</span
-                >
-                <span class="text-danger font-weight-bold">NEWS</span>
+          <article class="card mb-3 border-0">
+            <figure class="mb-1 position-relative">
+              <img src="images/image2.jpg" class="card-img-top" alt="..." />
+              <figcaption class="position-absolute article-tag">
+                <a href="#">US</a>
               </figcaption>
             </figure>
-            <div class="card-body px-0 py-2">
-              <a href="#" class="p-0 m-0">
-                <h5 class="card-title font-weight-bold p-0 m-0">
-                  Exclusive: Kushner Gets Candid On Troubled Trump Campaign
-                </h5>
-              </a>
+            <div class="card-body pt-1 p-md-0 pl-0">
+              <h4 class="card-title font-weight-bold">
+                <a href="#">U.S. Extends Lebanon 'National Emergency' Amid Crises,
+                  Israeli Attacks
+                </a>
+              </h4>
+              <p class="card-text font-weight-light">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Quas, sint repellendus, quam rerum saepe voluptas iure
+                architecto deleniti at debitis natus et eius ab fugiat
+                consectetur incidunt unde id? Fugiat?
+              </p>
             </div>
           </article>
 
-          <article class="card border-0 col-12 col-md-3">
-            <figure class="mb-0 overflow-hidden">
-              <img
-                src="./images/image28.jpg"
-                class="position-relative img-responsive-size centering-img"
-                alt=""
-              />
-              <figcaption class="mt-3">
-                <span class="bg-danger p-1 font-weight-bold text-white"
-                  >FEATURES</span
-                >
-                <span class="text-danger font-weight-bold">CULTURE</span>
+          <article class="card mb-3 border-0">
+            <figure class="mb-1 position-relative">
+              <img src="images/image3.jpg" class="card-img-top" alt="..." />
+              <figcaption class="position-absolute article-tag">
+                <a href="#">US</a>
               </figcaption>
             </figure>
-            <div class="card-body px-0 py-2">
-              <a href="#" class="p-0 m-0">
-                <h5 class="card-title font-weight-bold p-0 m-0">
-                  How China Co-opts Hollywood
-                </h5>
-              </a>
+            <div class="card-body pt-1 p-md-0 pl-0">
+              <h4 class="card-title font-weight-bold">
+                <a href="#">U.S. Extends Lebanon 'National Emergency' Amid Crises,
+                  Israeli Attacks
+                </a>
+              </h4>
+              <p class="card-text font-weight-light">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Quas, sint repellendus, quam rerum saepe voluptas iure
+                architecto deleniti at debitis natus et eius ab fugiat
+                consectetur incidunt unde id? Fugiat?
+              </p>
             </div>
           </article>
 
-          <article class="card border-0 col-12 col-md-3">
-            <figure class="mb-0 overflow-hidden">
-              <img
-                src="./images/image29.jpg"
-                class="position-relative img-responsive-size"
-                alt=""
-              />
-              <figcaption class="mt-3">
-                <span class="bg-danger p-1 font-weight-bold text-white"
-                  >PERISCOPE</span
-                >
-                <span class="text-danger font-weight-bold">OPINION</span>
+          <article class="card mb-3 border-0">
+            <figure class="mb-1 position-relative">
+              <img src="images/image4.jpg" class="card-img-top" alt="..." />
+              <figcaption class="position-absolute article-tag">
+                <a href="#">US</a>
               </figcaption>
             </figure>
-            <div class="card-body px-0 py-2">
-              <a href="#" class="p-0 m-0">
-                <h5 class="card-title font-weight-bold p-0 m-0">
-                  The Supreme Court's Culture War Whiplash Is All in Your Head
-                </h5>
-              </a>
+            <div class="card-body pt-1 p-md-0 pl-0">
+              <h4 class="card-title font-weight-bold">
+                <a href="#">U.S. Extends Lebanon 'National Emergency' Amid Crises,
+                  Israeli Attacks
+                </a>
+              </h4>
+              <p class="card-text font-weight-light">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Quas, sint repellendus, quam rerum saepe voluptas iure
+                architecto deleniti at debitis natus et eius ab fugiat
+                consectetur incidunt unde id? Fugiat?
+              </p>
             </div>
           </article>
 
-          <article class="card border-0 col-12 col-md-3">
-            <figure class="mb-0 overflow-hidden">
-              <img
-                src="./images/image30.jpg"
-                class="position-relative img-responsive-size"
-                alt=""
-              />
-              <figcaption class="mt-3">
-                <span class="bg-danger p-1 font-weight-bold text-white"
-                  >PERISCOPE</span
-                >
-                <span class="text-danger font-weight-bold">OPINION</span>
+          <article class="card mb-3 border-0">
+            <figure class="mb-1 position-relative">
+              <img src="images/image5.jpg" class="card-img-top" alt="..." />
+              <figcaption class="position-absolute article-tag">
+                <a href="#">WORLD</a>
               </figcaption>
             </figure>
-            <div class="card-body px-0 py-2">
-              <a href="#" class="p-0 m-0">
-                <h5 class="card-title font-weight-bold p-0 m-0">
-                  The Supreme Court's Culture War Whiplash Is All in Your Head
-                </h5>
-              </a>
+            <div class="card-body pt-1 p-md-0 pl-0">
+              <h4 class="card-title font-weight-bold">
+                <a href="#">U.S. Extends Lebanon 'National Emergency' Amid Crises,
+                  Israeli Attacks
+                </a>
+              </h4>
+              <p class="card-text font-weight-light">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Quas, sint repellendus, quam rerum saepe voluptas iure
+                architecto deleniti at debitis natus et eius ab fugiat
+                consectetur incidunt unde id? Fugiat?
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-6 col-sm-12 order-3 order-md-2 order-lg-2">
+          <h6 class="text-secondary font-weight-bold">TOP STORY</h6>
+          <article class="card mb-3 border-0">
+            <figure class="mb-1 position-relative">
+              <img src="images/image2.jpg" class="card-img-top" alt="..." />
+              <figcaption class="position-absolute article-tag">
+                <a href="#">WORLD</a>
+              </figcaption>
+            </figure>
+            <div class="card-body pt-1 p-md-0 pl-0">
+              <h4 class="card-title font-weight-bold">
+                <a href="#">U.S. Extends Lebanon 'National Emergency' Amid Crises,
+                  Israeli Attacks</a>
+              </h4>
+              <p class="card-text font-weight-light">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Quas, sint repellendus, quam rerum saepe voluptas iure
+                architecto deleniti at debitis natus et eius ab fugiat
+                consectetur incidunt unde id? Fugiat?
+              </p>
             </div>
           </article>
 
-          <article class="card border-0 col-12 col-md-3">
-            <figure class="mb-0 position-relative overflow-hidden">
-              <img
-                class="position-relative img-responsive-size centering-img"
-                src="./images/image31.jpg"
-                alt=""
-              />
-              <figcaption class="mt-3">
-                <span class="bg-danger p-1 font-weight-bold text-white"
-                  >COVER</span
-                >
-                <span class="text-danger font-weight-bold">NEWS</span>
-              </figcaption>
-            </figure>
-            <div class="card-body px-0 py-2">
-              <a href="#" class="p-0 m-0">
-                <h5 class="card-title font-weight-bold p-0 m-0">
-                  Exclusive: Kushner Gets Candid On Troubled Trump Campaign
-                </h5>
-              </a>
+          <div class="row">
+            <div class="col-12">
+              <h6 class="text-secondary font-weight-bold">MY TURN</h6>
+            </div>
+
+            <div class="col">
+              <article class="card mb-3 border-0">
+                <figure class="mb-0 position-relative">
+                  <img src="images/image9.jpg" class="card-img-top" alt="..." />
+                </figure>
+                <div class="card-body pt-1 p-md-0 pl-0">
+                  <h6 class="card-title font-weight-bold">
+                    <a href="#" class="text-secondary">U.S. Extends Lebanon 'National Emergency' Amid Crises,
+                      Israeli Attacks
+                    </a>
+                  </h6>
+                </div>
+              </article>
+            </div>
+
+            <div class="col">
+
+              <article class="card mb-3 border-0">
+                <figure class="mb-0 position-relative">
+                  <img src="images/image10.jpg" class="card-img-top" alt="..." />
+                </figure>
+                <div class="card-body pt-1 p-md-0 pl-0">
+                  <h6 class="card-title font-weight-bold">
+                    <a href="#" class="text-secondary">U.S. Extends Lebanon 'National Emergency' Amid Crises,
+                      Israeli Attacks
+                    </a>
+                  </h6>
+                </div>
+              </article>
+            </div>
+            <div class="col">
+              <article class="card mb-3 border-0">
+                <figure class="mb-0 position-relative">
+                  <img src="images/image11.jpg" class="card-img-top" alt="..." />
+                </figure>
+                <div class="card-body pt-1 p-md-0 pl-0">
+                  <h6 class="card-title font-weight-bold">
+                    <a href="#" class="text-secondary">U.S. Extends Lebanon 'National Emergency' Amid Crises,
+                      Israeli Attacks
+                    </a>
+                  </h6>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="row">
+
+            <div class="col-12">
+              <h6 class="text-secondary font-weight-bold">CULTURE & TRAVEL</h6>
+            </div>
+            <div class="col">
+              <article class="card mb-3 border-0">
+                <figure class="mb-0 position-relative">
+                  <img src="images/image12.jpg" class="card-img-top" alt="..." />
+                </figure>
+                <div class="card-body pt-1 p-md-0 pl-0">
+                  <h6 class="card-title font-weight-bold">
+                    <a href="#" class="text-secondary">U.S. Extends Lebanon 'National Emergency' Amid Crises,
+                      Israeli Attacks
+                    </a>
+                  </h6>
+                </div>
+              </article>
+            </div>
+            <div class="col">
+              <article class="card mb-3 border-0">
+                <figure class="mb-0 position-relative">
+                  <img src="images/image13.jpg" class="card-img-top" alt="..." />
+                </figure>
+                <div class="card-body pt-1 p-md-0 pl-0">
+                  <h6 class="card-title font-weight-bold">
+                    <a href="#" class="text-secondary">U.S. Extends Lebanon 'National Emergency' Amid Crises,
+                      Israeli Attacks
+                    </a>
+                  </h6>
+                </div>
+              </article>
+            </div>
+            <div class="col">
+              <article class="card mb-3 border-0">
+                <figure class="mb-0 position-relative">
+                  <img src="images/image14.jpg" class="card-img-top" alt="..." />
+                </figure>
+                <div class="card-body pt-1 p-md-0 pl-0">
+                  <h6 class="card-title font-weight-bold">
+                    <a href="#" class="text-secondary">U.S. Extends Lebanon 'National Emergency' Amid Crises,
+                      Israeli Attacks
+                    </a>
+                  </h6>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="sticky2">
+            <h6 class="font-weight-bold text-secondary">MORE STORIES</h6>
+
+            <article class="row border-top pt-3 pb-3 px-2">
+              <div class="">
+                <img src="images/image15.jpg" class="float-left mr-2" alt="Article image" />
+                <h4 class="card-title font-17 font-weight-bold">
+                  <a href="#">White House Funds Far-Right Fundamentalists to Lie, China
+                    Ambassador Claims</a>
+                </h4>
+                <p class="card-text font-14">
+                  The mosques that China is alleged to have destroyed were
+                  just "being renovated," Liu Xiaoming told a press
+                  conference.
+                </p>
+              </div>
+            </article>
+
+            <article class="row border-top pt-3 pb-3 px-2">
+              <div class="">
+                <img src="images/image16.jpg" class="float-left mr-2" alt="Article Image" />
+                <h4 class="card-title font-17 font-weight-bold">
+                  <a href="#">White House Funds Far-Right Fundamentalists to Lie, China
+                    Ambassador Claims</a>
+                </h4>
+                <p class="card-text font-14">
+                  The mosques that China is alleged to have destroyed were
+                  just "being renovated," Liu Xiaoming told a press
+                  conference.
+                </p>
+              </div>
+            </article>
+
+            <article class="row border-top pt-3 pb-3 px-2">
+              <div class="">
+                <img src="images/image17.jpg" class="float-left mr-2" alt="Article Image" />
+                <h4 class="card-title font-17 font-weight-bold">
+                  <a href="#">White House Funds Far-Right Fundamentalists to Lie, China
+                    Ambassador Claims</a>
+                </h4>
+                <p class="card-text font-14">
+                  The mosques that China is alleged to have destroyed were
+                  just "being renovated," Liu Xiaoming told a press
+                  conference.
+                </p>
+              </div>
+            </article>
+
+            <article class="row border-top pt-3 pb-3 px-2">
+              <div class="">
+                <img src="images/image18.jpg" class="float-left mr-2" alt="Article Image" />
+                <h4 class="card-title font-17 font-weight-bold">
+                  <a href="#">White House Funds Far-Right Fundamentalists to Lie, China
+                    Ambassador Claims</a>
+                </h4>
+                <p class="card-text font-14">
+                  The mosques that China is alleged to have destroyed were
+                  just "being renovated," Liu Xiaoming told a press
+                  conference.
+                </p>
+              </div>
+            </article>
+
+            <article class="row border-top pt-3 pb-3 px-2">
+              <div class="">
+                <img src="images/image19.jpg" class="float-left mr-2" alt="Article Image" />
+                <h4 class="card-title font-17 font-weight-bold">
+                  <a href="#">White House Funds Far-Right Fundamentalists to Lie, China
+                    Ambassador Claims</a>
+                </h4>
+                <p class="card-text font-14">
+                  The mosques that China is alleged to have destroyed were
+                  just "being renovated," Liu Xiaoming told a press
+                  conference.
+                </p>
+              </div>
+            </article>
+
+            <article class="row border-top pt-3 pb-3 px-2">
+              <div class="">
+                <img src="images/image20.jpg" class="float-left mr-2" alt="Article Image" />
+                <h4 class="card-title font-17 font-weight-bold">
+                  <a href="#">White House Funds Far-Right Fundamentalists to Lie, China
+                    Ambassador Claims</a>
+                </h4>
+                <p class="card-text font-14">
+                  The mosques that China is alleged to have destroyed were
+                  just "being renovated," Liu Xiaoming told a press
+                  conference.
+                </p>
+              </div>
+            </article>
+
+            <article class="row border-top pt-3 pb-3 px-2">
+              <div class="">
+                <img src="images/image21.jpg" class="float-left mr-2" alt="Article Image" />
+                <h4 class="card-title font-17 font-weight-bold">
+                  <a href="#">White House Funds Far-Right Fundamentalists to Lie, China
+                    Ambassador Claims</a>
+                </h4>
+                <p class="card-text font-14">
+                  The mosques that China is alleged to have destroyed were
+                  just "being renovated," Liu Xiaoming told a press
+                  conference.
+                </p>
+              </div>
+            </article>
+
+            <article class="row border-top pt-3 pb-3 px-2">
+              <div class="">
+                <img src="images/image22.jpg" class="float-left mr-2" alt="Article Image" />
+                <h4 class="card-title font-17 font-weight-bold">
+                  <a href="#">White House Funds Far-Right Fundamentalists to Lie, China
+                    Ambassador Claims</a>
+                </h4>
+                <p class="card-text font-14">
+                  The mosques that China is alleged to have destroyed were
+                  just "being renovated," Liu Xiaoming told a press
+                  conference.
+                </p>
+              </div>
+            </article>
+
+            <article class="row border-top pt-3 pb-3 px-2">
+              <div class="">
+                <img src="images/image23.jpg" class="float-left mr-2" alt="Article Image" />
+                <h4 class="card-title font-17 font-weight-bold">
+                  <a href="#">White House Funds Far-Right Fundamentalists to Lie, China
+                    Ambassador Claims</a>
+                </h4>
+                <p class="card-text font-14">
+                  The mosques that China is alleged to have destroyed were
+                  just "being renovated," Liu Xiaoming told a press
+                  conference.
+                </p>
+              </div>
+            </article>
+
+            <article class="row border-top pt-3 pb-3 px-2">
+              <div class="">
+                <img src="images/image24.jpg" class="float-left mr-2" alt="Article Image" />
+                <h4 class="card-title font-17 font-weight-bold">
+                  <a href="#">White House Funds Far-Right Fundamentalists to Lie, China
+                    Ambassador Claims</a>
+                </h4>
+                <p class="card-text font-14">
+                  The mosques that China is alleged to have destroyed were
+                  just "being renovated," Liu Xiaoming told a press
+                  conference.
+                </p>
+              </div>
+            </article>
+
+            <article class="row border-top pt-3 pb-3 px-2">
+              <div class="">
+                <img src="images/image25.jpg" class="float-left mr-2" alt="Article Image" />
+                <h4 class="card-title font-17 font-weight-bold">
+                  <a href="#">White House Funds Far-Right Fundamentalists to Lie, China
+                    Ambassador Claims</a>
+                </h4>
+                <p class="card-text font-14">
+                  The mosques that China is alleged to have destroyed were
+                  just "being renovated," Liu Xiaoming told a press
+                  conference.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div id="the-debate" class="col-12 col-md-12 col-sm-12 col-lg-3 sticky3 order-2 order-md-3 order-lg-3">
+          <h6 class="text-secondary font-weight-bold">THE DEBATE</h6>
+          <article class="row border-top-3 pt-3">
+            <div class="col-md-3 col-lg-4 col-4">
+              <img src="images/profile.png" height="63" width="63" class="rounded-circle" alt="Profile picture" />
+            </div>
+            <div class="col-md-9 col-lg-8 col-8">
+              <div class="card-block">
+                <h4 class="card-title font-17 font-weight-bold">
+                  <a href="#">Lorem ipsum dolor sit amet est solor</a>
+                </h4>
+                <p class="card-text font-14">
+                  By <span class="font-weight-bold">DONALD TRUMP</span>
+                </p>
+              </div>
+            </div>
+          </article>
+          <div id="vs" class=" ">
+            <span class="">VS</span>
+          </div>
+
+          <article class="row border-bottom-3 pb-3">
+            <div class="col-md-10 col-lg-8 col-8">
+              <div class="card-block">
+                <h4 class="card-title font-17 font-weight-bold">
+                  <a href="#">Lorem ipsum dolor sit amet est solor</a>
+                </h4>
+                <p class="card-text font-14">
+                  By <span class="font-weight-bold">DONALD TRUMP</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-2 col-3 col-lg-4 text-md-right">
+              <img src="images/profile.png" height="63" width="63" class="rounded-circle" alt="Profile picture" />
             </div>
           </article>
 
-          <article class="card border-0 col-12 col-md-3">
-            <figure class="mb-0 overflow-hidden">
-              <img
-                src="./images/image32.jpg"
-                class="position-relative img-responsive-size centering-img"
-                alt=""
-              />
-              <figcaption class="mt-3">
-                <span class="bg-danger p-1 font-weight-bold text-white"
-                  >FEATURES</span
-                >
-                <span class="text-danger font-weight-bold">CULTURE</span>
-              </figcaption>
-            </figure>
-            <div class="card-body px-0 py-2">
-              <a href="#" class="p-0 m-0">
-                <h5 class="card-title font-weight-bold p-0 m-0">
-                  How China Co-opts Hollywood
-                </h5>
-              </a>
+          <h6 class="text-secondary font-weight-bold mt-3">OPINION</h6>
+
+          <article class="row border-bottom pb-3">
+            <div class="col-md-1 col-3 col-lg-3">
+              <img src="images/profile.png" height="63" width="63" class="rounded-circle" alt="Profile picture" />
+            </div>
+            <div class="col-md-9 pl-md-4 col-9 col-lg-9">
+              <div class="card-block">
+                <h4 class="card-title font-17 font-weight-bold">
+                  <a href="#">Lorem ipsum dolor sit amet est solor</a>
+                </h4>
+                <p class="card-text font-14">
+                  By <span class="font-weight-bold">DONALD TRUMP</span>
+                </p>
+              </div>
             </div>
           </article>
 
-          <article class="card border-0 col-12 col-md-3">
-            <figure class="mb-0 overflow-hidden">
-              <img
-                src="./images/image33.jpg"
-                class="position-relative img-responsive-size"
-                alt=""
-              />
-              <figcaption class="mt-3">
-                <span class="bg-danger p-1 font-weight-bold text-white"
-                  >PERISCOPE</span
-                >
-                <span class="text-danger font-weight-bold">OPINION</span>
-              </figcaption>
-            </figure>
-            <div class="card-body px-0 py-2">
-              <a href="#" class="p-0 m-0">
-                <h5 class="card-title font-weight-bold p-0 m-0">
-                  The Supreme Court's Culture War Whiplash Is All in Your Head
-                </h5>
-              </a>
+          <article class="row border-bottom pb-3 mt-2">
+            <div class="col-md-1 col-3 col-lg-3">
+              <img src="images/profile.png" height="63" width="63" class="rounded-circle" alt="Profile picture" />
+            </div>
+            <div class="col-md-9 pl-md-4  col-9">
+              <div class="card-block">
+                <h4 class="card-title font-17 font-weight-bold">
+                  <a href="#">Lorem ipsum dolor sit amet est solor</a>
+                </h4>
+                <p class="card-text font-14">
+                  By <span class="font-weight-bold">DONALD TRUMP</span>
+                </p>
+              </div>
             </div>
           </article>
+
+          <article class="row border-bottom pb-3 mt-2">
+            <div class="col-md-1 col-3 col-lg-3">
+              <img src="images/profile.png" height="63" width="63" class="rounded-circle" alt="Profile picture" />
+            </div>
+            <div class="col-md-9 pl-md-4  col-9">
+              <div class="card-block">
+                <h4 class="card-title font-17 font-weight-bold">
+                  <a href="#">Lorem ipsum dolor sit amet est solor</a>
+                </h4>
+                <p class="card-text font-14">
+                  By <span class="font-weight-bold">DONALD TRUMP</span>
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="row border-bottom pb-3 mt-2">
+            <div class="col-md-1 col-3 col-lg-3">
+              <img src="images/profile.png" height="63" width="63" class="rounded-circle" alt="Profile picture" />
+            </div>
+            <div class="col-md-9 pl-md-4  col-9">
+              <div class="card-block">
+                <h4 class="card-title font-17 font-weight-bold">
+                  <a href="#">Lorem ipsum dolor sit amet est solor</a>
+                </h4>
+                <p class="card-text font-14">
+                  By <span class="font-weight-bold">DONALD TRUMP</span>
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="row border-bottom pb-3 mt-2">
+            <div class="col-md-1 col-3 col-lg-3">
+              <img src="images/profile.png" height="63" width="63" class="rounded-circle" alt="Profile picture" />
+            </div>
+            <div class="col-md-9 pl-md-4  col-9">
+              <div class="card-block">
+                <h4 class="card-title font-17 font-weight-bold">
+                  <a href="#">Lorem ipsum dolor sit amet est solor</a>
+                </h4>
+                <p class="card-text font-14">
+                  By <span class="font-weight-bold">DONALD TRUMP</span>
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="row border-bottom pb-3 mt-2">
+            <div class="col-md-1 col-3 col-lg-3">
+              <img src="images/profile.png" height="63" width="63" class="rounded-circle" alt="Profile picture" />
+            </div>
+            <div class="col-md-9 pl-md-4 col-9 col-lg-9">
+              <div class="card-block">
+                <h4 class="card-title font-17 font-weight-bold">
+                  <a href="#">Lorem ipsum dolor sit amet est solor</a>
+                </h4>
+                <p class="card-text font-14">
+                  By <span class="font-weight-bold">DONALD TRUMP</span>
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <div class="row">
+            <div class="col-md-6 offset-md-3 col-12 col-lg-12 offset-lg-0">
+              <div class="card mt-3 mb-3 bg-light">
+                <div class="card-body">
+                  <div class="card-title d-flex">
+                    <div class="">
+                      <img src="./images/n.png" height="28" width="28" alt="N symbol" class="mt-2 mr-2" />
+                    </div>
+                    <h5>START YOUR DAY WITH OUR TOP 5 ARTICLES</h5>
+                  </div>
+
+                  <input placeholder="Email address" class="w-100" />
+                  <button type="button" class="btn btn-danger w-100 mt-3">
+                    FREE SIGN UP >
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
+    </div>
 
-      <div class="container-fluid bg-white p-sm-0">
-        <div class="border-top bg-white">
-          <div class="row bg-white">
-            <div class="col-12">
-              <h4 class="text-danger font-weight-bold">U.S.</h4>
-            </div>
-          </div>
-          <div class="row bg-white">
-            <div class="col-12 border-0 col-md-4">
-              <img src="./images/image34.png" class="full-width" alt="" />
-              <h5 class="font-weight-bold pt-1 pb-3">
-                <a href="#" class=""
-                  >Ellen DeGeneres Apologizes as Exec Producer Replaced Over
-                  Work Environment
-                </a>
-              </h5>
-            </div>
-            <div class="col-12 col-md-4">
-              <img src="./images/image35.png" class="full-width" alt="" />
-              <h5 class="font-weight-bold pt-1 pb-3">
-                <a href="#" class="m-0">
-                  Trump Says Florida COVID Cases Going Down as State Breaks
-                  Death Record
-                </a>
-              </h5>
-            </div>
-            <div class="col-12 col-md-4">
-              <div class="d-flex py-3 border-bottom">
-                <img
-                  width="200"
-                  class="mr-3"
-                  src="./images/image37.png"
-                  alt=""
-                />
-                <h5 class="card-title font-weight-bold p-0 m-0 font-17">
-                  <a href="#"
-                    >Rubio, Dems Can Agree on Something: Stimulus Cash for
-                    Mixed-Status Families
-                  </a>
-                </h5>
-              </div>
-
-              <div class="d-flex py-3 border-bottom">
-                <img
-                  width="200"
-                  class="mr-3"
-                  src="./images/image37.png"
-                  alt=""
-                />
-                <h5 class="card-title font-weight-bold p-0 m-0 font-17">
-                  <a href="#"
-                    >Rubio, Dems Can Agree on Something: Stimulus Cash for
-                    Mixed-Status Families
-                  </a>
-                </h5>
-              </div>
-              <div class="d-flex py-3 border-bottom">
-                <img
-                  width="200"
-                  class="mr-3"
-                  src="./images/image38.png"
-                  alt=""
-                />
-                <h5 class="card-title font-weight-bold p-0 m-0 font-17">
-                  <a href="#"
-                    >Gallego Says Germany Troop Exit 'Dangerous,' Aims to Block
-                    Trump From More
-                  </a>
-                </h5>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="border-top">
-          <div class="row bg-white">
-            <div class="col-12">
-              <h4 class="text-danger font-weight-bold">World</h4>
-            </div>
-          </div>
-          <div class="row bg-white">
-            <div class="col-12 border-0 col-md-4">
-              <img src="./images/image39.png" class="full-width" alt="" />
-              <h5 class="font-weight-bold pt-1 pb-3">
-                <a href="#" class=""
-                  >Doctors Without Borders Forced to Shut Down COVID-19 Clinic
-                  at Greek Camp
-                </a>
-              </h5>
-            </div>
-            <div class="col-12 col-md-4">
-              <img src="./images/image40.png" class="full-width" alt="" />
-              <h5 class="font-weight-bold pt-1 pb-3">
-                <a href="#" class="m-0">
-                  Alleged Russian Fighters in Belarus Raised Suspicions by Not
-                  Drinking
-                </a>
-              </h5>
-            </div>
-            <div class="col-12 col-md-4">
-              <div class="d-flex pb-3 border-bottom">
-                <img
-                  width="170"
-                  class="mr-3"
-                  src="./images/image37.png"
-                  alt=""
-                />
-                <h5 class="font-weight-bold font-17">
-                  <a href="#"
-                    >Iran Leader Says U.S. is Kneeling on the Neck of Weaker
-                    Nations
-                  </a>
-                </h5>
-              </div>
-              <div class="d-flex py-3 border-bottom">
-                <img
-                  width="200"
-                  class="mr-3"
-                  src="./images/image42.png"
-                  alt=""
-                />
-                <h5 class="font-weight-bold font-17">
-                  <a href="#"
-                    >China Media Warns U.S., Allies of 'Unbearable' Consequences
-                    of New Cold War
-                  </a>
-                </h5>
-              </div>
-              <div class="d-flex py-3 border-bottom">
-                <img
-                  width="200"
-                  class="mr-3"
-                  src="./images/image38.png"
-                  alt=""
-                />
-                <h5 class="font-weight-bold font-17">
-                  <a href="#"
-                    >Gallego Says Germany Troop Exit 'Dangerous,' Aims to Block
-                    Trump From More
-                  </a>
-                </h5>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row border-bottom">
+    <div class="container-fluid p-md-2 mt-2 p-sm-0">
+      <div class="row">
         <div class="col-12 p-sm-0">
-          <div
-            class="d-flex border-bottom py-1 bg-white justify-content-center text-center mx-auto pt-2"
-          >
+          <div class="d-flex border-bottom py-1 bg-white justify-content-center text-center mx-auto pt-2">
             <img src="./images/n.png" height="28" width="28" alt="N symbol" />
-            <h6 class="ml-1 mt-1">Editor's Pick</h6>
+            <h6 class="ml-1 mt-1">IN THE MAGAZINE</h6>
           </div>
         </div>
       </div>
 
       <div class="row mb-4 d-flex align-itens-baseline bg-white pt-3">
         <article class="card border-0 col-12 col-md-3">
-          <figure class="mb-0 position-relative overflow-hidden">
-            <img
-              class="position-relative img-responsive-size centering-img"
-              src="./images/image45.jpg"
-              alt=""
-            />
-            <figcaption class="mt-3">
-              <span class="bg-danger p-1 font-weight-bold text-white"
-                >COVER</span
-              >
-              <span class="text-danger font-weight-bold">NEWS</span>
+          <figure class="position-relative mb-0">
+            <img src="./images/image26.jpg" style="width: 100%;" alt="" />
+            <figcaption class="position-absolute article-tag">
+              <a href="#">AUGUST 7 ISSUE</a>
             </figcaption>
           </figure>
-          <div class="card-body px-0 py-2">
+          <div class="card-body text-center bg-light p-2">
             <a href="#" class="p-0 m-0">
               <h5 class="card-title font-weight-bold p-0 m-0">
-                Exclusive: Kushner Gets Candid On Troubled Trump Campaign
+                SEE ALL FEATURES
               </h5>
             </a>
           </div>
@@ -1226,15 +700,9 @@
 
         <article class="card border-0 col-12 col-md-3">
           <figure class="mb-0 position-relative overflow-hidden">
-            <img
-              class="position-relative img-responsive-size centering-img"
-              src="./images/image27.jpg"
-              alt=""
-            />
+            <img class="position-relative img-responsive-size centering-img" src="./images/image27.jpg" alt="" />
             <figcaption class="mt-3">
-              <span class="bg-danger p-1 font-weight-bold text-white"
-                >COVER</span
-              >
+              <span class="bg-danger p-1 font-weight-bold text-white">COVER</span>
               <span class="text-danger font-weight-bold">NEWS</span>
             </figcaption>
           </figure>
@@ -1249,15 +717,9 @@
 
         <article class="card border-0 col-12 col-md-3">
           <figure class="mb-0 overflow-hidden">
-            <img
-              src="./images/image28.jpg"
-              class="position-relative img-responsive-size centering-img"
-              alt=""
-            />
+            <img src="./images/image28.jpg" class="position-relative img-responsive-size centering-img" alt="" />
             <figcaption class="mt-3">
-              <span class="bg-danger p-1 font-weight-bold text-white"
-                >FEATURES</span
-              >
+              <span class="bg-danger p-1 font-weight-bold text-white">FEATURES</span>
               <span class="text-danger font-weight-bold">CULTURE</span>
             </figcaption>
           </figure>
@@ -1272,15 +734,9 @@
 
         <article class="card border-0 col-12 col-md-3">
           <figure class="mb-0 overflow-hidden">
-            <img
-              src="./images/image29.jpg"
-              class="position-relative img-responsive-size"
-              alt=""
-            />
+            <img src="./images/image29.jpg" class="position-relative img-responsive-size" alt="" />
             <figcaption class="mt-3">
-              <span class="bg-danger p-1 font-weight-bold text-white"
-                >PERISCOPE</span
-              >
+              <span class="bg-danger p-1 font-weight-bold text-white">PERISCOPE</span>
               <span class="text-danger font-weight-bold">OPINION</span>
             </figcaption>
           </figure>
@@ -1295,15 +751,9 @@
 
         <article class="card border-0 col-12 col-md-3">
           <figure class="mb-0 overflow-hidden">
-            <img
-              src="./images/image30.jpg"
-              class="position-relative img-responsive-size"
-              alt=""
-            />
+            <img src="./images/image30.jpg" class="position-relative img-responsive-size" alt="" />
             <figcaption class="mt-3">
-              <span class="bg-danger p-1 font-weight-bold text-white"
-                >PERISCOPE</span
-              >
+              <span class="bg-danger p-1 font-weight-bold text-white">PERISCOPE</span>
               <span class="text-danger font-weight-bold">OPINION</span>
             </figcaption>
           </figure>
@@ -1318,15 +768,9 @@
 
         <article class="card border-0 col-12 col-md-3">
           <figure class="mb-0 position-relative overflow-hidden">
-            <img
-              class="position-relative img-responsive-size centering-img"
-              src="./images/image31.jpg"
-              alt=""
-            />
+            <img class="position-relative img-responsive-size centering-img" src="./images/image31.jpg" alt="" />
             <figcaption class="mt-3">
-              <span class="bg-danger p-1 font-weight-bold text-white"
-                >COVER</span
-              >
+              <span class="bg-danger p-1 font-weight-bold text-white">COVER</span>
               <span class="text-danger font-weight-bold">NEWS</span>
             </figcaption>
           </figure>
@@ -1341,15 +785,9 @@
 
         <article class="card border-0 col-12 col-md-3">
           <figure class="mb-0 overflow-hidden">
-            <img
-              src="./images/image32.jpg"
-              class="position-relative img-responsive-size centering-img"
-              alt=""
-            />
+            <img src="./images/image32.jpg" class="position-relative img-responsive-size centering-img" alt="" />
             <figcaption class="mt-3">
-              <span class="bg-danger p-1 font-weight-bold text-white"
-                >FEATURES</span
-              >
+              <span class="bg-danger p-1 font-weight-bold text-white">FEATURES</span>
               <span class="text-danger font-weight-bold">CULTURE</span>
             </figcaption>
           </figure>
@@ -1364,15 +802,9 @@
 
         <article class="card border-0 col-12 col-md-3">
           <figure class="mb-0 overflow-hidden">
-            <img
-              src="./images/image33.jpg"
-              class="position-relative img-responsive-size"
-              alt=""
-            />
+            <img src="./images/image33.jpg" class="position-relative img-responsive-size" alt="" />
             <figcaption class="mt-3">
-              <span class="bg-danger p-1 font-weight-bold text-white"
-                >PERISCOPE</span
-              >
+              <span class="bg-danger p-1 font-weight-bold text-white">PERISCOPE</span>
               <span class="text-danger font-weight-bold">OPINION</span>
             </figcaption>
           </figure>
@@ -1385,205 +817,396 @@
           </div>
         </article>
       </div>
+    </div>
 
-      <div class="container-fluid p-sm-0 mt-3 bg-white mb-5">
+    <div class="container-fluid bg-white p-sm-0">
+      <div class="border-top bg-white">
         <div class="row bg-white">
-          <div class="col-12 col-lg-7">
-            <h4 class="text-danger font-weight-bold my-3">Subscribe</h4>
-            <div class="card bg-gray">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-5 col-lg-6">
-                    <img
-                      src="images/image-subscription.png"
-                      height="241"
-                      alt="Image subscription"
-                    />
-                  </div>
-                  <div
-                    class="col-12 col-lg-6 col-md-7 d-flex flex-column justify-content-center"
-                  >
-                    <h4 class="text-weight-bold">
-                      In-depth Stories You Don't See Elsewhere About Topics You
-                      Want to Read!
-                    </h4>
-                    <p class="font-weight-light mb-0">
-                      All Access + Weekly Delivery.
-                    </p>
-                    <p class="font-weight-light mt-0">
-                      Choose A Membership That's Perfect for You!
-                    </p>
-                    <button type="button" class="btn btn-danger w-50">
-                      SUBSCRIBE >
-                    </button>
-                  </div>
+          <div class="col-12">
+            <h4 class="text-danger font-weight-bold">U.S.</h4>
+          </div>
+        </div>
+        <div class="row bg-white">
+          <div class="col-12 border-0 col-md-4">
+            <img src="./images/image34.png" class="full-width" alt="" />
+            <h5 class="font-weight-bold pt-1 pb-3">
+              <a href="#" class="">Ellen DeGeneres Apologizes as Exec Producer Replaced Over
+                Work Environment
+              </a>
+            </h5>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="./images/image35.png" class="full-width" alt="" />
+            <h5 class="font-weight-bold pt-1 pb-3">
+              <a href="#" class="m-0">
+                Trump Says Florida COVID Cases Going Down as State Breaks
+                Death Record
+              </a>
+            </h5>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="d-flex py-3 border-bottom">
+              <img width="200" class="mr-3" src="./images/image37.png" alt="" />
+              <h5 class="card-title font-weight-bold p-0 m-0 font-17">
+                <a href="#">Rubio, Dems Can Agree on Something: Stimulus Cash for
+                  Mixed-Status Families
+                </a>
+              </h5>
+            </div>
+
+            <div class="d-flex py-3 border-bottom">
+              <img width="200" class="mr-3" src="./images/image37.png" alt="" />
+              <h5 class="card-title font-weight-bold p-0 m-0 font-17">
+                <a href="#">Rubio, Dems Can Agree on Something: Stimulus Cash for
+                  Mixed-Status Families
+                </a>
+              </h5>
+            </div>
+            <div class="d-flex py-3 border-bottom">
+              <img width="200" class="mr-3" src="./images/image38.png" alt="" />
+              <h5 class="card-title font-weight-bold p-0 m-0 font-17">
+                <a href="#">Gallego Says Germany Troop Exit 'Dangerous,' Aims to Block
+                  Trump From More
+                </a>
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-top">
+        <div class="row bg-white">
+          <div class="col-12">
+            <h4 class="text-danger font-weight-bold">World</h4>
+          </div>
+        </div>
+        <div class="row bg-white">
+          <div class="col-12 border-0 col-md-4">
+            <img src="./images/image39.png" class="full-width" alt="" />
+            <h5 class="font-weight-bold pt-1 pb-3">
+              <a href="#" class="">Doctors Without Borders Forced to Shut Down COVID-19 Clinic
+                at Greek Camp
+              </a>
+            </h5>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="./images/image40.png" class="full-width" alt="" />
+            <h5 class="font-weight-bold pt-1 pb-3">
+              <a href="#" class="m-0">
+                Alleged Russian Fighters in Belarus Raised Suspicions by Not
+                Drinking
+              </a>
+            </h5>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="d-flex pb-3 border-bottom">
+              <img width="170" class="mr-3" src="./images/image37.png" alt="" />
+              <h5 class="font-weight-bold font-17">
+                <a href="#">Iran Leader Says U.S. is Kneeling on the Neck of Weaker
+                  Nations
+                </a>
+              </h5>
+            </div>
+            <div class="d-flex py-3 border-bottom">
+              <img width="200" class="mr-3" src="./images/image42.png" alt="" />
+              <h5 class="font-weight-bold font-17">
+                <a href="#">China Media Warns U.S., Allies of 'Unbearable' Consequences
+                  of New Cold War
+                </a>
+              </h5>
+            </div>
+            <div class="d-flex py-3 border-bottom">
+              <img width="200" class="mr-3" src="./images/image38.png" alt="" />
+              <h5 class="font-weight-bold font-17">
+                <a href="#">Gallego Says Germany Troop Exit 'Dangerous,' Aims to Block
+                  Trump From More
+                </a>
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row border-bottom">
+      <div class="col-12 p-sm-0">
+        <div class="d-flex border-bottom py-1 bg-white justify-content-center text-center mx-auto pt-2">
+          <img src="./images/n.png" height="28" width="28" alt="N symbol" />
+          <h6 class="ml-1 mt-1">Editor's Pick</h6>
+        </div>
+      </div>
+    </div>
+
+    <div id="editors-pick" class="row mb-4 d-flex align-itens-baseline bg-white pt-3">
+      <article class="card border-0 col-12 col-md-6 col-lg-3">
+        <figure class="mb-0 position-relative overflow-hidden">
+          <img class="position-relative img-responsive-size  centering-img" src="./images/image45.jpg" alt="" />
+          <figcaption class="mt-3">
+            <span class="bg-danger p-1 font-weight-bold text-white">COVER</span>
+            <span class="text-danger font-weight-bold">NEWS</span>
+          </figcaption>
+        </figure>
+        <div class="card-body px-0 py-2">
+          <a href="#" class="p-0 m-0">
+            <h5 class="card-title font-weight-bold p-0 m-0">
+              Exclusive: Kushner Gets Candid On Troubled Trump Campaign
+            </h5>
+          </a>
+        </div>
+      </article>
+
+      <article class="card border-0 col-12 col-md-6 col-lg-3">
+        <figure class="mb-0 position-relative overflow-hidden">
+          <img class="position-relative img-responsive-size centering-img" src="./images/image27.jpg" alt="" />
+          <figcaption class="mt-3">
+            <span class="bg-danger p-1 font-weight-bold text-white">COVER</span>
+            <span class="text-danger font-weight-bold">NEWS</span>
+          </figcaption>
+        </figure>
+        <div class="card-body px-0 py-2">
+          <a href="#" class="p-0 m-0">
+            <h5 class="card-title font-weight-bold p-0 m-0">
+              Exclusive: Kushner Gets Candid On Troubled Trump Campaign
+            </h5>
+          </a>
+        </div>
+      </article>
+
+      <article class="card border-0 col-12 col-md-6 col-lg-3">
+        <figure class="mb-0 overflow-hidden">
+          <img src="./images/image28.jpg" class="position-relative img-responsive-size centering-img" alt="" />
+          <figcaption class="mt-3">
+            <span class="bg-danger p-1 font-weight-bold text-white">FEATURES</span>
+            <span class="text-danger font-weight-bold">CULTURE</span>
+          </figcaption>
+        </figure>
+        <div class="card-body px-0 py-2">
+          <a href="#" class="p-0 m-0">
+            <h5 class="card-title font-weight-bold p-0 m-0">
+              How China Co-opts Hollywood
+            </h5>
+          </a>
+        </div>
+      </article>
+
+      <article class="card border-0 col-12 col-md-6 col-lg-3">
+        <figure class="mb-0 overflow-hidden">
+          <img src="./images/image29.jpg" class="position-relative img-responsive-size" alt="" />
+          <figcaption class="mt-3">
+            <span class="bg-danger p-1 font-weight-bold text-white">PERISCOPE</span>
+            <span class="text-danger font-weight-bold">OPINION</span>
+          </figcaption>
+        </figure>
+        <div class="card-body px-0 py-2">
+          <a href="#" class="p-0 m-0">
+            <h5 class="card-title font-weight-bold p-0 m-0">
+              The Supreme Court's Culture War Whiplash Is All in Your Head
+            </h5>
+          </a>
+        </div>
+      </article>
+
+      <article class="card border-0 col-12 col-md-6 col-lg-3">
+        <figure class="mb-0 overflow-hidden">
+          <img src="./images/image30.jpg" class="position-relative img-responsive-size" alt="" />
+          <figcaption class="mt-3">
+            <span class="bg-danger p-1 font-weight-bold text-white">PERISCOPE</span>
+            <span class="text-danger font-weight-bold">OPINION</span>
+          </figcaption>
+        </figure>
+        <div class="card-body px-0 py-2">
+          <a href="#" class="p-0 m-0">
+            <h5 class="card-title font-weight-bold p-0 m-0">
+              The Supreme Court's Culture War Whiplash Is All in Your Head
+            </h5>
+          </a>
+        </div>
+      </article>
+
+      <article class="card border-0 col-12 col-md-6 col-lg-3">
+        <figure class="mb-0 position-relative overflow-hidden">
+          <img class="position-relative img-responsive-size centering-img" src="./images/image31.jpg" alt="" />
+          <figcaption class="mt-3">
+            <span class="bg-danger p-1 font-weight-bold text-white">COVER</span>
+            <span class="text-danger font-weight-bold">NEWS</span>
+          </figcaption>
+        </figure>
+        <div class="card-body px-0 py-2">
+          <a href="#" class="p-0 m-0">
+            <h5 class="card-title font-weight-bold p-0 m-0">
+              Exclusive: Kushner Gets Candid On Troubled Trump Campaign
+            </h5>
+          </a>
+        </div>
+      </article>
+
+      <article class="card border-0 col-12 col-md-6 col-lg-3">
+        <figure class="mb-0 overflow-hidden">
+          <img src="./images/image32.jpg" class="position-relative img-responsive-size centering-img" alt="" />
+          <figcaption class="mt-3">
+            <span class="bg-danger p-1 font-weight-bold text-white">FEATURES</span>
+            <span class="text-danger font-weight-bold">CULTURE</span>
+          </figcaption>
+        </figure>
+        <div class="card-body px-0 py-2">
+          <a href="#" class="p-0 m-0">
+            <h5 class="card-title font-weight-bold p-0 m-0">
+              How China Co-opts Hollywood
+            </h5>
+          </a>
+        </div>
+      </article>
+
+      <article class="card border-0 col-12 col-md-6 col-lg-3">
+        <figure class="mb-0 overflow-hidden">
+          <img src="./images/image33.jpg" class="position-relative img-responsive-size" alt="" />
+          <figcaption class="mt-3">
+            <span class="bg-danger p-1 font-weight-bold text-white">PERISCOPE</span>
+            <span class="text-danger font-weight-bold">OPINION</span>
+          </figcaption>
+        </figure>
+        <div class="card-body px-0 py-2">
+          <a href="#" class="p-0 m-0">
+            <h5 class="card-title font-weight-bold p-0 m-0">
+              The Supreme Court's Culture War Whiplash Is All in Your Head
+            </h5>
+          </a>
+        </div>
+      </article>
+    </div>
+
+    <div class="container-fluid p-sm-0 mt-3 bg-white mb-5">
+      <div class="row bg-white">
+        <div class="col-12 col-lg-7">
+          <h4 class="text-danger font-weight-bold my-3">Subscribe</h4>
+          <div id="subscribe" class="card bg-gray">
+            <div class="card-body">
+              <div class="row d-flex justify-content-center">
+                <div class="col-12 col-md-6 col-lg-7 magazines-cover text-center ">
+                  <img src="images/image-subscription.png" alt="Image subscription" />
+                </div>
+                <div class="col-12 col-lg-5 col-md-10 d-flex flex-column 
+                    justify-content-center subscribe-text text-center text-lg-left align-itens-center">
+                  <h4 class="text-weight-bold">
+                    In-depth Stories You Don't See Elsewhere About Topics You
+                    Want to Read!
+                  </h4>
+                  <p class="font-weight-light mb-0">
+                    All Access + Weekly Delivery.
+                  </p>
+                  <p class="font-weight-light mt-0">
+                    Choose A Membership That's Perfect for You!
+                  </p>
+                  <button type="button" class="btn btn-danger w-50">
+                    SUBSCRIBE >
+                  </button>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="col-12 col-lg-5">
-            <h4 class="text-danger font-weight-bold my-3">Newsletter</h4>
-            <div id="newsletter" class="card mb-3">
-              <div class="row no-gutters">
-                <div class="col-md-4 col-lg-3 d-none d-md-block">
-                  <img
-                    src="./images/newsletter.png"
-                    class="card-img"
-                    id="newsletter-img"
-                    alt="Newsletter img"
-                  />
-                </div>
-                <div class="col-md-8 col-lg-9 h-100">
-                  <div
-                    class="card-body d-flex flex-column justify-content-center"
-                  >
-                    <h5 class="card-title">The Starting 5</h5>
-                    <p class="font-weight-light">
-                      See why nearly a quarter of a million subscribers begin
-                      their day with the Starting 5.
-                    </p>
-                    <input
-                      type="email"
-                      class="w-100 mb-3"
-                      placeholder="Email address"
-                    />
-                    <button type="button" class="btn btn-danger w-50 w-100">
-                      FREE SIGN UP >
-                    </button>
-                  </div>
+        <div class="col-12 col-lg-5">
+          <h4 class="text-danger font-weight-bold my-3">Newsletter</h4>
+          <div id="newsletter" class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-4 col-lg-6 d-none d-md-block">
+                <img src="./images/newsletter.png" class="card-img" id="newsletter-img" alt="Newsletter img" />
+              </div>
+              <div class="col-md-8 col-lg-6 h-100">
+                <div class="card-body d-flex flex-column justify-content-center">
+                  <h5 class="card-title">The Starting 5</h5>
+                  <p class="font-weight-light">
+                    See why nearly a quarter of a million subscribers begin
+                    their day with the Starting 5.
+                  </p>
+                  <input type="email" class="w-100 mb-3" placeholder="Email address" />
+                  <button type="button" class="btn btn-danger w-50 w-100">
+                    FREE SIGN UP >
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <footer>
-        <div class="container-fluid bg-white">
-          <div class="row border-bottom pb-2">
-            <div
-              class="col-12 col-md-6 d-flex flex-column flex-md-row align-items-md-end"
-            >
-              <a href="#" class="main-logo-red fill-white py-1">
-                <img width="236" src="images/logo-red.svg" alt="Logo" />
-              </a>
-              <span class="py-1">© 2020 Newsweek</span>
-            </div>
-
-            <div
-              class="col-12 col-md-6 d-flex justify-content-md-end align-items-center"
-            >
-              <i
-                class="fa fa-facebook-official fa-lg px-1 text-secondary"
-                aria-hidden="true"
-              ></i>
-              <i
-                class="fa fa-twitter fa-lg px-1 text-secondary"
-                aria-hidden="true"
-              ></i>
-              <i
-                class="fa fa-instagram fa-lg px-1 text-secondary"
-                aria-hidden="true"
-              ></i>
-              <i
-                class="fa fa-tumblr fa-lg px-1 text-secondary"
-                aria-hidden="true"
-              ></i>
-              <i
-                class="fa fa-linkedin fa-lg px-1 text-secondary"
-                aria-hidden="true"
-              ></i>
-            </div>
+    <footer>
+      <div class="container-fluid bg-white">
+        <div class="row border-bottom pb-2">
+          <div class="col-12 col-md-6 d-flex flex-column flex-md-row align-items-md-end">
+            <a href="#" class="main-logo-red fill-white py-1">
+              <img width="236" src="images/logo-red.svg" alt="Logo" />
+            </a>
+            <span class="py-1">© 2020 Newsweek</span>
           </div>
 
-          <div class="row pt-2">
-            <div class="col-12 d-flex align-items-baseline">
-              <label class="pr-3">
-                Editions:
-              </label>
-              <ul class="list-unstyled d-flex flex-wrap">
-                <li>
-                  <a href="#" class="border-md-right px-3 font-14"
-                    >U.S. Edition</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="border-md-right px-3 font-14">日本</a>
-                </li>
-                <li>
-                  <a href="#" class="border-md-right px-3 font-14">Pakistan</a>
-                </li>
-                <li>
-                  <a href="#" class="border-md-right px-3 font-14">Polska</a>
-                </li>
-                <li>
-                  <a href="#" class="border-md-right px-3 font-14">România</a>
-                </li>
-              </ul>
-            </div>
+          <div class="col-12 col-md-6 d-flex justify-content-md-end align-items-center">
+            <i class="fa fa-facebook-official fa-lg px-1 text-secondary" aria-hidden="true"></i>
+            <i class="fa fa-twitter fa-lg px-1 text-secondary" aria-hidden="true"></i>
+            <i class="fa fa-instagram fa-lg px-1 text-secondary" aria-hidden="true"></i>
+            <i class="fa fa-tumblr fa-lg px-1 text-secondary" aria-hidden="true"></i>
+            <i class="fa fa-linkedin fa-lg px-1 text-secondary" aria-hidden="true"></i>
           </div>
+        </div>
 
-          <div class="row pt-1">
-            <div class="col-12">
-              <div class="d-flex py-2 flex-wrap">
-                <a href="#" class="border-md-right pr-2 pr-1 py-1 font-14"
-                  >About Us</a
-                >
-                <a href="#" class="border-md-right px-2 py-1 font-14"
-                  >Corrections</a
-                >
-                <a href="#" class="border-md-right px-2 py-1 font-14"
-                  >Contact Us</a
-                >
-                <a href="#" class="border-md-right px-2 py-1 font-14"
-                  >Editorial Guidelines</a
-                >
-                <a href="#" class="border-md-right px-2 py-1 font-14"
-                  >Advertise</a
-                >
-                <a href="#" class="border-md-right px-2 py-1 font-14"
-                  >Copyright</a
-                >
-                <a href="#" class="border-md-right px-2 py-1 font-14"
-                  >Terms & Conditions</a
-                >
-                <a href="#" class="border-md-right px-2 py-1 font-14"
-                  >Privacy Policy</a
-                >
-                <a href="#" class="border-md-right px-2 py-1 font-14"
-                  >Terms of Sale</a
-                >
-                <a href="#" class="border-md-right px-2 py-1 font-14"
-                  >Archive</a
-                >
-                <a href="#" class="border-md-right px-2 py-1 font-14"
-                  >Announcements</a
-                >
-                <a href="#" class="border-md-right px-2 py-1 font-14"
-                  >Consent preferences</a
-                >
-              </div>
+        <div class="row pt-2">
+          <div class="col-12 d-flex align-items-baseline">
+            <label class="pr-3">
+              Editions:
+            </label>
+            <ul class="list-unstyled d-flex flex-wrap">
+              <li>
+                <a href="#" class="border-md-right px-3 font-14">U.S. Edition</a>
+              </li>
+              <li>
+                <a href="#" class="border-md-right px-3 font-14">日本</a>
+              </li>
+              <li>
+                <a href="#" class="border-md-right px-3 font-14">Pakistan</a>
+              </li>
+              <li>
+                <a href="#" class="border-md-right px-3 font-14">Polska</a>
+              </li>
+              <li>
+                <a href="#" class="border-md-right px-3 font-14">România</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row pt-1">
+          <div class="col-12">
+            <div class="d-flex py-2 flex-wrap">
+              <a href="#" class="border-md-right pr-2 pr-1 py-1 font-14">About Us</a>
+              <a href="#" class="border-md-right px-2 py-1 font-14">Corrections</a>
+              <a href="#" class="border-md-right px-2 py-1 font-14">Contact Us</a>
+              <a href="#" class="border-md-right px-2 py-1 font-14">Editorial Guidelines</a>
+              <a href="#" class="border-md-right px-2 py-1 font-14">Advertise</a>
+              <a href="#" class="border-md-right px-2 py-1 font-14">Copyright</a>
+              <a href="#" class="border-md-right px-2 py-1 font-14">Terms & Conditions</a>
+              <a href="#" class="border-md-right px-2 py-1 font-14">Privacy Policy</a>
+              <a href="#" class="border-md-right px-2 py-1 font-14">Terms of Sale</a>
+              <a href="#" class="border-md-right px-2 py-1 font-14">Archive</a>
+              <a href="#" class="border-md-right px-2 py-1 font-14">Announcements</a>
+              <a href="#" class="border-md-right px-2 py-1 font-14">Consent preferences</a>
             </div>
           </div>
         </div>
-      </footer>
-    </main>
+      </div>
+    </footer>
+  </main>
 
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

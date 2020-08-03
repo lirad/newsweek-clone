@@ -51,6 +51,8 @@ header ul li a {
   white-space: nowrap;
 }
 
+
+
 .login-button span {
   font-size: 20px;
   font-weight: 600;
@@ -207,6 +209,35 @@ header ul li input:focus {
     max-width: 191px;
   }
 
+  #subscribe img {
+    height: 241px;
+  }
+
+  .magazines-cover {
+    position: relative;
+  }
+
+  #editors-pick img.img-responsive-size,
+  .centering-img {
+    min-width: 100%;
+    
+  }
+
+  img.img-responsive-size,
+  .centering-img {
+    min-width: 242px;
+    max-width: 162px;
+  }
+
+  .subscribe-text {
+    position: relative;
+    bottom: 50px;
+  }
+
+  #subscribe button {
+    margin: auto;
+  }
+
   .subscribe-button {
     margin-left: 0;
     margin-right: 0;
@@ -220,12 +251,12 @@ header ul li input:focus {
     font-size: 1rem;
   }
 
-  img.img-responsive-size,
+  /* img.img-responsive-size,
   .centering-img {
     min-width: 243px;
     max-width: 243px;
     max-height: 162px;
-  }
+  } */
 
   .p-sm-0 {
     padding: 0;
@@ -248,12 +279,6 @@ header ul li input:focus {
     white-space: nowrap;
   }
 
-  img.img-responsive-size,
-  .centering-img {
-    min-width: 327px;
-    max-width: 327px;
-  }
-
   .border-md-right {
     border-right: 1px solid lightgray;
     padding-right: 2px;
@@ -265,6 +290,10 @@ header ul li input:focus {
     position: sticky;
     top: 0;
     height: 2660px;
+  }
+
+  #subscribe img {
+    height: 300px;
   }
 
   .sticky3 {
@@ -281,7 +310,7 @@ header ul li input:focus {
   }
 
   #newsletter {
-    min-height: 282px;
+    min-height: 342px;
     overflow: hidden;
   }
 
