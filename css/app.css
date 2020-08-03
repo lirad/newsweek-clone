@@ -248,13 +248,6 @@ header ul li input:focus {
     font-size: 1rem;
   }
 
-  /* img.img-responsive-size,
-  .centering-img {
-    min-width: 243px;
-    max-width: 243px;
-    max-height: 162px;
-  } */
-
   .p-sm-0 {
     padding: 0;
   }
@@ -301,9 +294,9 @@ header ul li input:focus {
 
   img.img-responsive-size,
   .centering-img {
-    min-width: 435px;
+    min-width: 290px;
     max-width: 435px;
-    max-height: 290px;
+    max-height: 193px;
   }
 
   #newsletter {
