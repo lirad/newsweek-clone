@@ -51,8 +51,6 @@ header ul li a {
   white-space: nowrap;
 }
 
-
-
 .login-button span {
   font-size: 20px;
   font-weight: 600;
@@ -217,16 +215,15 @@ header ul li input:focus {
     position: relative;
   }
 
-  #editors-pick img.img-responsive-size,
-  .centering-img {
-    min-width: 100%;
-    
-  }
-
   img.img-responsive-size,
   .centering-img {
     min-width: 242px;
     max-width: 162px;
+  }
+
+  #editors-pick img.img-responsive-size,
+  .centering-img {
+    min-width: 100%;
   }
 
   .subscribe-text {
